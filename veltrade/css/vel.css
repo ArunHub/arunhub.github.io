@@ -1,3 +1,4 @@
+/* variables */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -29,6 +30,14 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color: #87898f;
+  letter-spacing: 0.5px;
+}
+
 ol, ul {
   list-style: none;
 }
@@ -38,23 +47,35 @@ table {
   border-spacing: 0;
 }
 
+*, *::after, *::before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1rem 0;
+}
+
 h2 {
-  margin: 15px 0;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  letter-spacing: -1.5px;
+  color: #285943;
 }
 
 p {
-  margin: 0 0 5px 0;
+  margin: 0 0 0.5rem 0;
 }
 
 /* custom styling */
-body {
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-}
-
 .container {
   width: 1000px;
   margin: auto;
+  padding: 1rem;
 }
 
 header {
@@ -62,20 +83,27 @@ header {
   flex-direction: column;
 }
 
-header .header__firstpart {
-  flex: 1;
-}
-
 nav {
   display: flex;
   align-items: center;
   flex-direction: row;
   text-align: center;
+  background: white;
+  border-top: 4px solid #77AF9C;
+  border-bottom: 4px solid #77AF9C;
 }
 
-nav div {
+nav a {
   flex: 1;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  color: #20222f;
+  padding: 1rem 0;
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+main {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=maps/vel.css.map */

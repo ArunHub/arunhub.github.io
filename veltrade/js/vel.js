@@ -1,5 +1,5 @@
-function animateToTop(e) {
-    e.preventDefault();
+function animateToTop(event) {
+    event.preventDefault();
     var scrollToTop = window.setInterval(function() {
         var pos = window.pageYOffset;
         if ( pos > 0 ) {
@@ -9,3 +9,6 @@ function animateToTop(e) {
         }
     }, 16);
 }
+
+
+document.getElementById('bullbear').addEventListener('click',animateToTop,false);

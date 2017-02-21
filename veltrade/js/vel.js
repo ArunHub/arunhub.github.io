@@ -10,5 +10,17 @@ function animateToTop(event) {
     }, 16);
 }
 
+(function () {
+	window.onscroll = function(){
+		var scrollPos = window.pageYOffset;
+		if (scrollPos > 200) bullbear.style.display = "block"		
+			else
+				bullbear.style.display = "block"
+			
+		
+	}
+})();
 
-document.getElementById('bullbear').addEventListener('click',animateToTop,false);
+var bullbear = document.getElementById('bullbear');
+
+bullbear.addEventListener('click',animateToTop,false);

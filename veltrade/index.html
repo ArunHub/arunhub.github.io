@@ -10,6 +10,35 @@
     <!-- Bootstrap -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link href="css/vel.css" rel="stylesheet">
+    <style type="text/css">
+      #bullbear{
+        position: fixed;
+        right: 10px;
+        bottom: 0;
+        z-index: 10;
+        text-indent: -9999px;
+        width: 75px;
+        height: 75px;
+        border: 5px solid green;
+        border-radius: 50%;
+        background-color: lightgreen;
+        background-image: url(images/spritesheet.png);
+        background-repeat: no-repeat;
+        background-position: 6px 6px;
+      }
+
+      #bullbear:before{
+        position: absolute;
+        top: 0;
+        left: calc(75px - 75px/2);
+        display: block;
+        content: "";
+        border: 10px solid darkgreen;
+        border-top:0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+      }
+    </style>
     <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -73,7 +102,7 @@
           </div>
       </footer>
 </div>
-<a id="bullbear" href="#"><img src="images/spritesheet.png"></a>
+<a id="bullbear" href="#">bullbear</a>
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="js/vel.js"></script>
 

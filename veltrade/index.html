@@ -18,6 +18,40 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+        <style type="text/css">
+      .board{        
+        border: 3px solid #8CD790;
+        border-radius: 2px;
+      }
+      .board__head,.board__body,.board__foot{
+        padding: 0.5rem;
+      }
+      .board__head h4{
+        margin: 0;
+      }
+      .board__body,.board__foot{
+        border-top:1px solid #8CD790;
+      }
+
+      .btn{
+        border: 2px solid #8CD790;
+        color: #285943;
+        display: block;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        margin-bottom: .5rem; 
+      }
+
+      .btn__prime{        
+        background: #D7FFF1;
+      }
+
+      .btn__sec{
+        color: #285943;
+        /*linear-gradient(#c4efc6,#4be4b0)*/
+        background: linear-gradient(#D7FFF1,#8CD790);
+      }
+    </style>
 </head>
 <body>
 <div>
@@ -56,7 +90,20 @@
 
 <p>With four principal areas of business: Forex Learning Program,Forex Signal Servicing,Structured  Account Management program ,CODING Service., we endeavor to offer the range of services required by an extensive client base, whether corporate or individual.</p>
 <p>We will give you the education in Forex that you desire. So that you can take this, and implement it into your trading.</p> 
-
+  <div class="board">
+    <div class="board__head">
+      <h4>Offer 1</h4>
+    </div>
+    <div class="board__body">
+      <p>describe1</p>
+      <p>describe2</p>
+      <p>describe3</p>
+    </div>
+    <div class="board__foot">
+      <button class="btn btn__prime">Buy</button>
+      <button class="btn btn__sec">Buy</button>
+    </div>
+  </div>
       </main>
       <footer>
           <div class="container-fluid">

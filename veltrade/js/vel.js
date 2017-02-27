@@ -17,22 +17,28 @@ function scrollUp(){
 }
 
 (function () {
+	var previousScroll = 0;
 	window.onscroll = function(){
-		var scrollPos = window.pageYOffset,
-		heightPage    = document.body.offsetHeight,
-		touchBottom	  = heightPage/2;
-		if (scrollPos > 200) {
-			console.log(scrollPos,document.body.offsetHeight);
+		
+		var currentScroll = this.pageYOffset;
+
 			//while going down
-			bullbear.style.transform = "scale(1)";	
+		if (currentScroll > previousScroll) {
+			console.log('down',currentScroll ,previousScroll)
+			bullbear.style.backgroundPosition = "6px 6px";
+			if (currentScroll > 200) {
+				bullbear.style.transform = "scale(1)";
+			} 	
 		}
-		// if(scrollPos > heightPage/2){
-		// 	scrollUp();
-		// }
-		//while going up less than 200
-			else{				
-				bullbear.style.transform = "scale(0)";		
-			}
+		else{				
+			console.log('up',currentScroll ,previousScroll);
+			bullbear.style.backgroundPosition = "6px -41px";
+			if (currentScroll < 200) {
+				bullbear.style.transform = "scale(0)";
+			} 	
+			
+		}
+		previousScroll = currentScroll;
 		
 	}
 })();

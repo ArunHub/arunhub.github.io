@@ -139,4 +139,40 @@ main {
   border-right: 18px solid transparent;
 }
 
+.board {
+  border: 3px solid #8CD790;
+  border-radius: 2px;
+}
+
+.board__head, .board__body, .board__foot {
+  padding: 0.5rem;
+}
+
+.board__head h4 {
+  margin: 0;
+}
+
+.board__body, .board__foot {
+  border-top: 1px solid #8CD790;
+}
+
+.btn {
+  border: 2px solid #8CD790;
+  color: #285943;
+  display: block;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-bottom: .5rem;
+}
+
+.btn__prime {
+  background: #D7FFF1;
+}
+
+.btn__sec {
+  color: #285943;
+  /*linear-gradient(#c4efc6,#4be4b0)*/
+  background: linear-gradient(#D7FFF1, #8CD790);
+}
+
 /*# sourceMappingURL=maps/vel.css.map */

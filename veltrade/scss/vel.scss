@@ -29,7 +29,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	// font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -61,7 +61,12 @@ table {
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
+}
+
+img{
+	max-width: 100%;
+  width: 100%;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -75,8 +80,37 @@ h2{
 	color: $color1;
 }
 
+h3{
+	font-size:2rem;
+	text-transform:capitalize;
+	letter-spacing:-1.5px;
+	color: $color1;
+}
+
 p{
 	margin:0 0 0.5rem 0;
+}
+
+figcaption{
+	font-weight:bold;
+	font-size:1rem;
+}
+
+blockquote{
+	position: relative;
+	padding:0 0 0 1rem;
+  height: 100%;
+  font-size: 1.5rem;
+  font-style: italic;
+
+	&:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 0.5rem;
+		height: inherit;
+		background:$color4;
+	}
 }
 
 /* custom styling */
@@ -94,6 +128,14 @@ header{
 
 	.header__firstpart{
 		
+	}
+
+	.logo{
+		a{
+			display: block;
+		  width: 100px;
+		  height: 100px;
+		}
 	}
 }
 
@@ -117,6 +159,29 @@ nav{
 
 main{
 	height:100vh;
+}
+
+.fourprinciples{
+	padding: 2rem 0;
+	background: cornsilk;
+}
+
+.row{
+	display:flex;
+	flex-wrap:wrap;
+	align-items:stretch;
+
+
+	.col{
+		flex: 0 0 25%;
+		padding: 1em;
+  	text-align: center;
+
+  		figure{
+  			width: 80%;
+  			margin:0 auto 10px;
+  		}
+	}
 }
 
 #bullbear{

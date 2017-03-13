@@ -40,7 +40,7 @@ footer, header, hgroup, menu, nav, section {
 
 body{
 	font-family: 'Roboto', sans-serif;
-	line-height:1.5;
+	line-height:1.4;
 	font-size:1.2rem;
 	color: #87898f;
 	letter-spacing: 0.5px;
@@ -96,6 +96,14 @@ figcaption{
 	font-size:1rem;
 }
 
+small{
+	font-size:80%;
+}
+
+.strong{
+	font-weight:bold;
+}
+
 blockquote{
 	position: relative;
 	padding:0 0 0 1rem;
@@ -112,6 +120,33 @@ blockquote{
 		background:$color4;
 	}
 }
+
+
+/*  btns  */
+
+.btn{
+        border: 0;
+        color: $color1;
+        display: block;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        margin-bottom: .5rem;
+        transition: box-shadow 0.3s ease;
+
+        &:hover{
+        	box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.15);
+        }
+      }
+
+      .btn__prime{        
+        background: $color4;
+      }
+
+      .btn__sec{
+        color: $color1;
+        /*linear-gradient(#c4efc6,#4be4b0)*/
+        background: linear-gradient($color4,$color3);
+      }
 
 /* custom styling */
 
@@ -164,6 +199,11 @@ main{
 .fourprinciples{
 	padding: 2rem 0;
 	background: cornsilk;
+
+	figure{
+  			width: 80%;
+  			margin:0 auto 10px;
+  		}
 }
 
 .row{
@@ -171,16 +211,20 @@ main{
 	flex-wrap:wrap;
 	align-items:stretch;
 
-
 	.col{
+		flex: 1;
+
+		&.col-2{
+			flex: 0 0 20%;
+		}
+
+	&.col-3{
 		flex: 0 0 25%;
 		padding: 1em;
   	text-align: center;
 
-  		figure{
-  			width: 80%;
-  			margin:0 auto 10px;
-  		}
+  		
+	}
 	}
 }
 
@@ -218,34 +262,30 @@ main{
  }
 
       .board{        
-        border: 3px solid $color3;
-        border-radius: 2px;
+        background: $color3;
+  			color: $color1;
+  			 box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3);
+  			   margin-bottom: 2rem;
+
+  			.board__head{
+					background:darken($color3,30%);
+  				h4{
+					color: white;
+	        margin: 0;  					
+  				}
+	      }
+
+	      .board__body{
+	      	p,ul li{
+	      		color: $color1;
+	      		font-size: 1rem;
+	      	}
+
+	      	.strong{
+	      		color: $color1;
+	      	}
+	      }
       }
       .board__head,.board__body,.board__foot{
         padding: 0.5rem;
-      }
-      .board__head h4{
-        margin: 0;
-      }
-      .board__body,.board__foot{
-        border-top:1px solid $color3;
-      }
-
-      .btn{
-        border: 2px solid $color3;
-        color: $color1;
-        display: block;
-        padding: 0.5rem 1rem;
-        cursor: pointer;
-        margin-bottom: .5rem; 
-      }
-
-      .btn__prime{        
-        background: $color4;
-      }
-
-      .btn__sec{
-        color: $color1;
-        /*linear-gradient(#c4efc6,#4be4b0)*/
-        background: linear-gradient($color4,$color3);
       }

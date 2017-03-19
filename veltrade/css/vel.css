@@ -97,19 +97,41 @@ small {
 
 blockquote {
   position: relative;
-  padding: 0 0 0 1rem;
-  height: 100%;
+  padding: 0 0 0 1.6rem;
   font-size: 1.5rem;
   font-style: italic;
+  text-shadow: 3px 5px 3px rgba(158, 158, 158, 0.62);
 }
 
 blockquote:before {
   content: "";
   position: absolute;
   left: 0;
-  width: 0.5rem;
-  height: inherit;
-  background: #D7FFF1;
+  top: 3px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, green 0%, rgba(0, 0, 255, 0) 50%, red 95%);
+}
+
+ul.list-block {
+  padding-left: 1rem;
+}
+
+ul.list-block li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+ul.list-block li:before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(90deg, red 30%, white 60%, green 10%);
 }
 
 /*  btns  */

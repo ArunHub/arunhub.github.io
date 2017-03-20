@@ -3,19 +3,87 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,8 +92,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -37,7 +114,8 @@ body {
   letter-spacing: 0.5px;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -46,7 +124,9 @@ table {
   border-spacing: 0;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -60,7 +140,12 @@ img {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 1rem 0;
 }
 
@@ -178,22 +263,45 @@ header .logo a {
 }
 
 nav {
+  border-top: 4px solid #77AF9C;
+  border-bottom: 4px solid #77AF9C;
+}
+
+nav > ul {
   display: flex;
   align-items: center;
   flex-direction: row;
   text-align: center;
   background: white;
-  border-top: 4px solid #77AF9C;
-  border-bottom: 4px solid #77AF9C;
+}
+
+nav > ul > li {
+  flex: 1;
+  position: relative;
+}
+
+nav > ul > li:hover a + ul {
+  transform: scale(1) translateY(0%);
 }
 
 nav a {
-  flex: 1;
+  display: block;
   text-transform: capitalize;
   color: #20222f;
   padding: 1rem 0;
   font-size: 1.05rem;
   font-weight: bold;
+}
+
+nav a + ul {
+  position: absolute;
+  transform-origin: top;
+  transition: transform 0.3s ease-out;
+  transform: scale(0) translateY(-100%);
+  top: 100%;
+  width: 100%;
+  background: white;
+  box-shadow: 0 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 main {
@@ -279,7 +387,8 @@ main {
   margin: 0;
 }
 
-.board .board__body p, .board .board__body ul li {
+.board .board__body p,
+.board .board__body ul li {
   color: #285943;
   font-size: 1rem;
 }
@@ -288,7 +397,9 @@ main {
   color: #285943;
 }
 
-.board__head, .board__body, .board__foot {
+.board__head,
+.board__body,
+.board__foot {
   padding: 0.5rem;
 }
 

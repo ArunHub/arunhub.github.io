@@ -211,21 +211,25 @@ table tbody tr td:not(:last-child) {
 
 blockquote {
   position: relative;
-  padding: 0 0 0 1.6rem;
+  padding: 1.6rem;
+  background: #D7FFF1;
+  border-left: 10px solid #8CD790;
+  color: #77AF9C;
   font-size: 1.5rem;
   font-style: italic;
-  text-shadow: 3px 5px 3px rgba(158, 158, 158, 0.62);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.07);
 }
 
 blockquote:before {
-  content: "";
+  content: "\"";
   position: absolute;
-  left: 0;
-  top: 3px;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
-  background: radial-gradient(circle, green 0%, rgba(0, 0, 255, 0) 50%, red 95%);
+  left: -20px;
+  top: 23px;
+  font-size: 3rem;
+  width: 30px;
+  height: 40px;
+  background: #8CD790;
+  color: white;
 }
 
 ul.list-block {
@@ -275,9 +279,9 @@ ul.list-block li:before {
 
 /* custom styling */
 .container {
-  width: 1000px;
+  width: 1170px;
   margin: auto;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 header {
@@ -285,44 +289,64 @@ header {
   flex-direction: column;
 }
 
-header .logo a {
+header .header__secondpart {
+  background: #8CD790;
+}
+
+.social-icons {
+  float: right;
+}
+
+.social-icons li {
+  float: left;
+}
+
+.social-icons li a {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 30px;
+  height: 30px;
 }
 
 nav {
-  border-top: 4px solid #77AF9C;
-  border-bottom: 4px solid #77AF9C;
-}
-
-nav > ul {
   display: flex;
-  align-items: center;
   flex-direction: row;
-  text-align: center;
-  background: white;
 }
 
-nav > ul > li {
+nav .logo {
+  flex: 0 0 auto;
+  letter-spacing: initial;
+}
+
+nav .logo a {
+  display: block;
+}
+
+nav .menu {
+  display: flex;
   flex: 1;
+  align-items: center;
+  text-align: center;
+}
+
+nav .menu > li {
+  flex: 1 1 auto;
   position: relative;
 }
 
-nav > ul > li:hover a + ul {
+nav .menu > li:hover a + ul {
   transform: scale(1) translateY(0%);
 }
 
-nav a {
+nav .menu a {
   display: block;
   text-transform: capitalize;
   color: #20222f;
   padding: 1rem 0;
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 
-nav a + ul {
+nav .menu a + ul {
   position: absolute;
   transform-origin: top;
   transition: transform 0.3s ease-out;

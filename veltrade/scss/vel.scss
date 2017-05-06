@@ -160,11 +160,11 @@ h6 {
     margin: 1rem 0;
     color: $color1;
     text-transform: capitalize;
-		letter-spacing: -1.5px;
+    letter-spacing: -1.5px;
 }
 
 h2 {
-    font-size: 2.5rem;    
+    font-size: 2.5rem;
 }
 
 h3 {
@@ -179,7 +179,6 @@ h5 {
     font-size: 1.3rem;
 }
 
-
 p {
     margin: 0 0 0.5rem 0;
 }
@@ -193,35 +192,30 @@ small {
     font-size: 80%;
 }
 
-table{
-	width:100%;
-	border-collapse:collapse;
-	border:1px solid #ccc;
-
-	thead{
-		tr{
-			th{
-				font-weight: bold;
-				padding:0.8rem 0;
-			}
-		}
-	}
-
-	tbody{
-		tr{
-			border-top:1px solid #ccc;
-			td{
-
-				text-align: center;
-				padding:1rem 0.5rem;
-				&:not(:last-child){
-					border-right:1px solid #ccc;
-				}
-			}
-		}
-	}
-
-
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    thead {
+        tr {
+            th {
+                font-weight: bold;
+                padding: 0.8rem 0;
+            }
+        }
+    }
+    tbody {
+        tr {
+            border-top: 1px solid #ccc;
+            td {
+                text-align: center;
+                padding: 1rem 0.5rem;
+                &:not(:last-child) {
+                    border-right: 1px solid #ccc;
+                }
+            }
+        }
+    }
 }
 
 .strong {
@@ -230,19 +224,24 @@ table{
 
 blockquote {
     position: relative;
-    padding: 0 0 0 1.6rem;
+    padding: 1.6rem;
+    background: $color4;
+    border-left: 10px solid $color3;
+    color: $color2;
     font-size: 1.5rem;
     font-style: italic;
-    text-shadow: 3px 5px 3px rgba(158, 158, 158, 0.62);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .07);
     &:before {
-        content: "";
+        content: "\"";
         position: absolute;
-        left: 0;
-        top: 3px;
-        width: 1.5rem;
-        height: 1.5rem;
-        border-radius: 50%;
-        background: radial-gradient(circle, green 0%, rgba(0, 0, 255, 0) 50%, red 95%);
+        left: -20px;
+        top: 23px;
+        font-size: 3rem;
+        width: 30px;
+        height: 40px;
+        background: $color3;
+        color: white;
+        // background: radial-gradient(circle, green 0%, rgba(0, 0, 255, 0) 50%, red 95%);
     }
 }
 
@@ -295,35 +294,50 @@ ul.list-block {
 /* custom styling */
 
 .container {
-    width: 1000px;
+    width: 1170px;
     margin: auto;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 header {
     display: flex;
     flex-direction: column;
-    .header__firstpart {}
-    .logo {
-        a {
+    
+    .header__secondpart {
+        background: $color3;
+    }
+}
+
+.social-icons{
+    float: right;
+    li{
+        float: left;    
+        a{
             display: block;
-            width: 100px;
-            height: 100px;
+            width: 30px;
+            height: 30px;
         }
     }
 }
 
 nav {
-    border-top: 4px solid $color2;
-    border-bottom: 4px solid $color2;
-    > ul {
-        display: flex;
-        align-items: center;
+    
+    display: flex;
         flex-direction: row;
+    .logo {
+        flex: 0 0 auto;
+        letter-spacing:initial;
+        a {
+            display: block;            
+        }
+    }
+    .menu {
+        display: flex;
+        flex: 1;
+        align-items: center;
         text-align: center;
-        background: white;
         > li {
-            flex: 1;
+            flex: 1 1 auto;
             position: relative;
             &:hover {
                 a + ul {
@@ -331,24 +345,24 @@ nav {
                 }
             }
         }
-    }
-    a {
-        display: block;
-        text-transform: capitalize;
-        color: #20222f;
-        padding: 1rem 0;
-        font-size: 1.05rem;
-        font-weight: bold;
-        + ul {
-            position: absolute;
-            // display: none;
-            transform-origin: top;
-            transition: transform 0.3s ease-out;
-            transform: scale(0) translateY(-100%);
-            top: 100%;
-            width: 100%;
-            background: white;
-            box-shadow: 0 1px 1px 5px rgba(0, 0, 0, 0.2);
+        a {
+            display: block;
+            text-transform: capitalize;
+            color: #20222f;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+            font-weight: bold;
+            + ul {
+                position: absolute;
+                // display: none;
+                transform-origin: top;
+                transition: transform 0.3s ease-out;
+                transform: scale(0) translateY(-100%);
+                top: 100%;
+                width: 100%;
+                background: white;
+                box-shadow: 0 1px 1px 5px rgba(0, 0, 0, 0.2);
+            }
         }
     }
 }

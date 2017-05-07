@@ -5,6 +5,7 @@ $color1: #285943;
 $color2: #77AF9C;
 $color3: #8CD790;
 $color4: #D7FFF1;
+$menucolor: darkgreen;
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -160,7 +161,6 @@ h6 {
     margin: 1rem 0;
     color: $color1;
     text-transform: capitalize;
-    letter-spacing: -1.5px;
 }
 
 h2 {
@@ -196,8 +196,11 @@ table {
     width: 100%;
     border-collapse: collapse;
     border: 1px solid #ccc;
+    background: white;
     thead {
         tr {
+            background: crimson;
+            color: white;
             th {
                 font-weight: bold;
                 padding: 0.8rem 0;
@@ -207,9 +210,13 @@ table {
     tbody {
         tr {
             border-top: 1px solid #ccc;
+            &:first-child {
+                font-size: 2rem;
+                color: $color1;
+            }
             td {
                 text-align: center;
-                padding: 1rem 0.5rem;
+                padding: 1rem;
                 &:not(:last-child) {
                     border-right: 1px solid #ccc;
                 }
@@ -222,6 +229,18 @@ table {
     font-weight: bold;
 }
 
+section {
+    padding: 50px 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
 blockquote {
     position: relative;
     padding: 1.6rem;
@@ -231,6 +250,10 @@ blockquote {
     font-size: 1.5rem;
     font-style: italic;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .07);
+    a {
+        color: cornflowerblue;
+        text-decoration: underline;
+    }
     &:before {
         content: "\"";
         position: absolute;
@@ -258,8 +281,32 @@ ul.list-block {
             top: 5px;
             width: 14px;
             height: 14px;
-            background: linear-gradient(90deg, red 30%, white 60%, green 10%);
+            background: linear-gradient(90deg, crimson 30%, white 60%, green 10%);
             // border-radius: 50%;
+        }
+    }
+}
+
+
+/* grid system */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-right: -1rem;
+    margin-left: -1rem;
+    .col {
+        flex: 1 1 100%;
+        padding: 0 1em;
+        &.col-2 {
+            flex: 1 1 50%;
+        }
+        &.col-3 {
+            flex: 1 1 33.3%;
+        }
+        &.col-4 {
+            flex: 1 1 25%;
         }
     }
 }
@@ -273,10 +320,10 @@ ul.list-block {
     display: block;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    margin-bottom: .5rem;
+    font-weight: bold;
     transition: box-shadow 0.3s ease;
     &:hover {
-        box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.15);
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.15);
     }
 }
 
@@ -284,10 +331,10 @@ ul.list-block {
     background: $color4;
 }
 
-.btn__sec {
-    color: $color1;
+.btn-prime {
+    color: white;
     /*linear-gradient(#c4efc6,#4be4b0)*/
-    background: linear-gradient($color4, $color3);
+    background: $color3;
 }
 
 
@@ -302,33 +349,43 @@ ul.list-block {
 header {
     display: flex;
     flex-direction: column;
-    
+    .header__firstpart {
+        padding: 20px 0;
+    }
     .header__secondpart {
         background: $color3;
     }
 }
 
-.social-icons{
+.social-icons {
     float: right;
-    li{
-        float: left;    
-        a{
+    li {
+        float: left;
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+        a {
             display: block;
             width: 30px;
             height: 30px;
+            svg {
+                transition: all 0.3s ease;
+            }
+            &:hover svg {
+                transform: translateY(-5px);
+            }
         }
     }
 }
 
 nav {
-    
     display: flex;
-        flex-direction: row;
+    flex-direction: row;
     .logo {
         flex: 0 0 auto;
-        letter-spacing:initial;
+        letter-spacing: initial;
         a {
-            display: block;            
+            display: block;
         }
     }
     .menu {
@@ -340,81 +397,152 @@ nav {
             flex: 1 1 auto;
             position: relative;
             &:hover {
-                a + ul {
-                    transform: scale(1) translateY(0%);
+                a + .menu__tools {
+                    display: block;
                 }
             }
         }
         a {
             display: block;
             text-transform: capitalize;
-            color: #20222f;
+            color: $menucolor;
             padding: 1rem 0;
             font-size: 0.9rem;
             font-weight: bold;
-            + ul {
+            &:hover,
+            :active,
+            :focus {
+                color: white;
+                font-weight: normal;
+            }
+            + .menu__tools {
                 position: absolute;
-                // display: none;
+                display: none;
+                text-align: left;
                 transform-origin: top;
-                transition: transform 0.3s ease-out;
-                transform: scale(0) translateY(-100%);
+                transition: all 0.3s ease-out;
                 top: 100%;
-                width: 100%;
+                min-width: 200px;
                 background: white;
                 box-shadow: 0 1px 1px 5px rgba(0, 0, 0, 0.2);
+                a {
+                    padding: 1rem;
+                    &:hover {
+                        color: white;
+                        background: $menucolor
+                    }
+                }
             }
         }
     }
 }
 
 main {
-    height: 100vh;
+    // height: 100vh;
 }
 
 .fourprinciples {
     padding: 2rem 0;
     background: cornsilk;
+    margin-bottom: 1rem;
     figure {
         width: 80%;
         margin: 0 auto 10px;
     }
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    .col {
-        flex: 1;
-        &.col-2 {
-            flex: 0 0 20%;
-        }
-        &.col-3 {
-            flex: 0 0 25%;
-            padding: 1em;
-            text-align: center;
-        }
+#forex_training,
+#signal_service {
+    background: honeydew;
+}
+
+#strategy_service {
+    background: url(../images/galaxy-spiral.png) no-repeat fixed;
+    h2 {
+        color: white;
     }
 }
 
+.contact-form {
+    background: aliceblue;
+    h3 {
+        color: initial;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 1rem 0;
+    }
+    input[type="text"],
+    textarea,
+    input[type="tel"],
+    input[type="email"] {
+        width: 100%;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-bottom: 2px ridge #DBDBDB;
+        outline: none;
+        padding: 1rem 0;
+        font-size: 0.9rem;
+        background: transparent;
+    }
+    textarea {
+        height: 100px;
+        outline: none;
+        border-bottom: 1px ridge #DBDBDB;
+        resize: none;
+    }
+    input[type="submit"] {
+        background: url('../images/msg-icon.png') no-repeat 0px 0px;
+        height: 23px;
+        width: 167px;
+        display: block;
+        outline: none;
+        text-indent: 30px;
+        border: none;
+        margin: 1rem 0;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+    }
+    input[type="submit"]:hover {
+        opacity: 0.9;
+        color: #999;
+    }
+    .social-icons {
+        float: none;
+    }
+}
+
+footer {
+    padding: 2rem 0;
+    color: white;
+    background: $color1;
+    text-align: center;
+}
+
+
+/* scroll top bullbear */
+
 #bullbear {
     position: fixed;
-    right: 10px;
-    bottom: 0;
+    right: 20px;
+    bottom: 20px;
     z-index: 10;
     text-indent: -9999px;
     width: 75px;
     height: 75px;
     border: 5px solid $color2;
     border-radius: 50%;
-    background-color: rgba(144, 238, 144, 0.29);
+    background-color: antiquewhite;
     background-image: url(../images/spritesheet.png);
     background-repeat: no-repeat;
-    background-position: 6px 6px;
-    /*background-size: 45px;*/
+    background-position: 2px -1px;
+    background-size: 60px;
+    display: none;
     transform: scale(0);
-    transition: transform 0.4s ease-in;
-    transition: background-position 0.2s ease;
+    transition: background-position 0.2s ease-in-out, transform 0.3s ease;
     &:before {
         position: absolute;
         top: -18px;
@@ -430,15 +558,27 @@ main {
 }
 
 .board {
-    background: $color3;
-    color: $color1;
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3);
+    background: white;
     margin-bottom: 2rem;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.3);
+    // color: $color1;
     .board__head {
-        background: darken($color3, 30%);
-        h4 {
+        background: crimson;
+        text-align: center;
+        h4,
+        small {
             color: white;
             margin: 0;
+            padding: 0.5rem 0;
+        }
+        .price {
+            background: darken(crimson, 10%);
+            display: block;
+            font-size: 3rem;
+            color: initial;
+        }
+        small {
+            display: block;
         }
     }
     .board__body {
@@ -451,9 +591,12 @@ main {
             color: $color1;
         }
     }
+    .btn-prime {
+        font-size: 1.2rem;
+        width: 100%;
+    }
 }
 
-.board__head,
 .board__body,
 .board__foot {
     padding: 0.5rem;

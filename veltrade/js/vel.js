@@ -8,31 +8,34 @@ function animateToTop(event) {
         } else {
             window.clearInterval(scrollToTop);
         }
-    }, 16);
+    }, 8);
 }
 
 (function() {
     var previousScroll = 0;
 
     window.onscroll = function() {
-        var currentScroll = this.pageYOffset;
+        var currentScroll = this.pageYOffset,
+      	SCROLL_AFTER_POS	= 200;
 
         //while going down
         if (currentScroll > previousScroll) {
-            bullbear.style.backgroundPosition = "6px 6px";
-            if (currentScroll > 200) {
-                bullbear.style.transform = "scale(1)";
+            bullbear.style.backgroundPosition = '2px -1px';            
+            if (currentScroll > SCROLL_AFTER_POS) {
+                bullbear.style.transform = 'scale(1)';
+            		bullbear.style.display = 'block';
             }
         } else {
-            bullbear.style.backgroundPosition = "6px -41px";
-            if (currentScroll < 200) {
-                bullbear.style.transform = "scale(0)";
+            bullbear.style.backgroundPosition = '2px -58px';
+            if (currentScroll < SCROLL_AFTER_POS) {
+                bullbear.style.transform = 'scale(0)';
+            	  bullbear.style.display = 'none';            	  
             }
-
         }
+
         previousScroll = currentScroll;
     }
-    
+
 })();
 
 var bullbear = document.getElementById('bullbear');

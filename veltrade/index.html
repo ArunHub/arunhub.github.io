@@ -24,14 +24,41 @@
 
 <body>
     <div>
+        <!-- *************************** HEADER *************************** -->
         <header>
-            <div class="container header__firstpart">
-                <ul class="list-inline social-icons">
-                    <li><a href="#"><img src="images/facebook.svg" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="images/twitter.svg" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="images/googleplus.svg" alt="google-Plus"></a></li>
-                    <li><a href="#"><img src="images/skype.svg" alt="Skype"></a></li>
-                </ul>
+            <div class="header__firstpart">
+                <div class="container">
+                    <ul class="list-inline social-icons">
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                                    <path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero" fill="#3b5998" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                                    <path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero" fill="#00aced" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                                    <path d="M5.09 7.273v1.745h2.89c-.116.75-.873 2.197-2.887 2.197-1.737 0-3.155-1.44-3.155-3.215S3.353 4.785 5.09 4.785c.99 0 1.652.422 2.03.786l1.382-1.33c-.887-.83-2.037-1.33-3.41-1.33C2.275 2.91 0 5.19 0 8s2.276 5.09 5.09 5.09c2.94 0 4.888-2.065 4.888-4.974 0-.334-.036-.59-.08-.843H5.09zm10.91 0h-1.455V5.818H13.09v1.455h-1.454v1.454h1.455v1.455h1.46V8.727H16" fill="#dd4b39" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                                    <path d="M8.035 12.6c-2.685 0-3.885-1.322-3.885-2.313 0-.51.374-.865.89-.865 1.15 0 .85 1.653 2.995 1.653 1.096 0 1.703-.597 1.703-1.208 0-.368-.18-.775-.904-.954l-2.387-.597C4.524 7.833 4.175 6.79 4.175 5.812c0-2.034 1.91-2.798 3.704-2.798 1.65 0 3.6.916 3.6 2.136 0 .523-.46.827-.97.827-.98 0-.8-1.36-2.78-1.36-.98 0-1.53.444-1.53 1.08 0 .636.77.84 1.44.993l1.76.392c1.93.433 2.42 1.566 2.42 2.633 0 1.652-1.27 2.886-3.82 2.886m7.4-3.26l-.02.09-.03-.16c.01.03.03.05.04.08.08-.45.12-.91.12-1.37 0-1.02-.2-2.01-.6-2.95-.38-.9-.93-1.71-1.62-2.4-.7-.69-1.5-1.24-2.4-1.62C10.01.59 9.02.39 8 .39c-.48 0-.964.047-1.43.137l.08.04-.16-.023.08-.016C5.927.183 5.205 0 4.472 0 3.278 0 2.155.466 1.31 1.313.465 2.16 0 3.286 0 4.483c0 .763.195 1.512.563 2.175l.013-.083.028.16-.04-.077c-.076.43-.115.867-.115 1.305 0 1.022.2 2.014.59 2.948.38.91.92 1.72 1.62 2.41.69.7 1.5 1.24 2.4 1.63.93.4 1.92.6 2.94.6.44 0 .89-.04 1.32-.12l-.08-.04.16.03-.09.02c.67.38 1.42.58 2.2.58 1.19 0 2.31-.46 3.16-1.31.84-.84 1.31-1.97 1.31-3.17 0-.76-.2-1.51-.57-2.18" fill-rule="nonzero" fill="#12A5F4" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="header__secondpart">
                 <div class="container">
@@ -49,7 +76,7 @@
                             <li><a href="#coding_service">MQL4 coding service</a></li>
                             <li>
                                 <a href="#">tools</a>
-                                <ul>
+                                <ul class="menu__tools">
                                     <li><a target="_blank" href="">Technical summary box</a></li>
                                     <li><a target="_blank" href="https://www.investing.com/currency-converter/">currency converter</a></li>
                                     <li><a target="_blank" href="https://www.investing.com/tools/fibonacci-calculator">fibonacci calculator</a></li>
@@ -72,269 +99,370 @@
                 </div>
             </div>
         </header>
+        <!-- *************************** BODY CONTENT *************************** -->
         <main>
-            <div>
-                <img src="images/homepage.svg" alt="">
-            </div>
-            <div class="container" id="home">
-                <h2>About us</h2>
-                <p>VelTrade is one of the Service provider in forex training program and Signal services across the globe. We are into from 2014 with providing effective and innovative servicing to all Traders.</p>
-                <p>
-                    We have been trading the financial markets using exclusively supply and demand imbalances, a proprietary strategy developed by our self over the years which helps locate in any market turning points where professional and institutional traders are planning their trades.
-                </p>
-            </div>
-            <div class="fourprinciples">
+            <!-- ******* Homepage image ******* -->
+            <section class="no-padding">
+                <img src="images/homepage.jpg" alt="">
+            </section>
+            <!-- ******* About us ******* -->
+            <section id="home">
                 <div class="container">
-                    <h3>four principal areas of business</h3>
+                    <h2>About us</h2>
+                    <p>VelTrade is one of the Service provider in forex training program and Signal services across the globe. We are into from 2014 with providing effective and innovative servicing to all Traders.</p>
+                    <p>
+                        We have been trading the financial markets using exclusively supply and demand imbalances, a proprietary strategy developed by our self over the years which helps locate in any market turning points where professional and institutional traders are planning their trades.
+                    </p>
+                </div>
+                <div class="fourprinciples">
+                    <div class="container">
+                        <h3>four principal areas of business</h3>
+                        <div class="row">
+                            <div class="col col-4">
+                                <figure>
+                                    <img src="images/lifetime-support.svg" alt="" />
+                                </figure>
+                                <figcaption>Forex Learning Program <em>(life time support)</em></figcaption>
+                            </div>
+                            <div class="col col-4">
+                                <figure>
+                                    <img src="images/trade-signals2.svg" alt="" />
+                                </figure>
+                                <figcaption>Forex Signal Servicing <em>(life time signals support)</em></figcaption>
+                            </div>
+                            <div class="col col-4">
+                                <figure>
+                                    <img src="images/account-management.svg" alt="" />
+                                </figure>
+                                <figcaption>Structured Account Management program</figcaption>
+                            </div>
+                            <div class="col col-4">
+                                <figure>
+                                    <img src="images/coding.svg" alt="" />
+                                </figure>
+                                <figcaption>CODING Service</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <p>We endeavor to offer the range of services required by an extensive client base, whether corporate or individual. We will give you the education in Forex that you desire. So that you can take this, and implement it into your trading.</p>
+                    <h4>Get Trained (TRADING  DOESN'T HAVE TO BE SO HARD)</h4>
+                    <div class="row">
+                        <div class="col">
+                            <p>We train you to be pro trader, also we teach you all commodities, shares, currency forex market with lifetime support.</p>
+                            <p>Our Forex Training provide Forex training the very easy way. Simply put, our clients can enjoy having Forex explained in layman’s terms and NOT being overwhelmed with a bunch of flam or unnecessary information about the market that’ll leave them confused.</p>
+                            <p>We focus on teaching our clients individually and makes a professional trader in the financial markets, and the world’s largest banks techniques to assure a profitable trading journey.</p>
+                            <p>Trading is a business that is needed in the development of self-control skills, money management skills and analytical skills.</p>
+                        </div>
+                    </div>
+                    <blockquote>VelTrade, finally make you an professional trader in Financial Markets.</blockquote>
+                    <h4>Managed Account</h4>
+                    <p>Don't have time for trading? No worries, we will manage your account if you choose one of our preferred broker for free.</p>
+                    <h4>Signal services</h4>
+                    <p>Receive our signals straight into your mailbox or access it on our telegram channel, pay monthly to make more than 500 to 600 pips and get up to 6 signals daily</p>
+                    learn forex
+                </div>
+            </section>
+            <!-- ******* FOREX TRAINING ******* -->
+            <section id="forex_training">
+                <div class="container">
+                    <h2>Learn Forex</h2>
+                    <div>
+                        <img src="images/learn-forex.svg" alt="">
+                    </div>
+                    <p class="strong">Forex Trading is 1% technical and 99% psychological. Losing capital is easier than making profits.</p>
+                    <p>Attending our Forex Training you will easily learn and understand the method that will allow you to make consistency pips in a day with precise Trade Entry and Exits. Our Forex Training Programs you don't need any experience, we will elevate you from beginner level to intermediate level and to Expert Forex Trader level.</p>
+                    <p>In our Forex Training you will learn Trading psychology, Cross Currency Analysis, Money Management, Risk Management with simple and efficient strategies used by big financial institutions etc. Learn and understand all these above Forex Training elements are important. So that you will adopt the ever changing, ever fluctuating financial Market. In Our Trainings method of teaching will make you to easily understand the Trading Strategies and by this you can earn consistent Profits. We will train you Do's and Don’ts that we learnt during our initial difficult times. We share our trading experience with you thus you will avoid the mistakes in your trading or you will implement the right strategies. </p>
+                    <p class="strong">This Training is provided not only for a forex trader, but both were being given to people who are not familiar with trading though.</p>
+                    <blockquote>VelTrade not only inviting you to join our Forex Training we also invite you to make consistent Profits.</blockquote>
+                    <h3>Things should follow to be the SUCCESSFUL FOREX TRADER:</h3>
+                    <ul class="list-block">
+                        <li>Never be greedy</li>
+                        <li>Never lose patience.</li>
+                        <li>Never be emotional.</li>
+                        <li>Never overtrade.</li>
+                        <li>Don’t get tips &amp; trade</li>
+                        <li>Don’t trade with others money.</li>
+                        <li>Don’t get loan, chit funds and make your trade risky.</li>
+                        <li>Do in your own name and in your own savings money.</li>
+                        <li>If you lose one or more trade continuously just stop the trade immediately &amp; relax yourself.</li>
+                        <li>Trade with your own confidence</li>
+                        <li>Don’t confuse yourself.</li>
+                        <li>Use indicators as a suggestion.</li>
+                    </ul>
+                    <p class="strong"><em>NOTE: Follow rules and regulations and be disciplined, patience.</em></p>
+                    <h4>Course Topics:</h4>
+                    <h5>Session 1: Offline</h5>
+                    <ul class="list-block">
+                        <li> Fundamentals &amp; Basics of Forex </li>
+                        <li>Money Management</li>
+                        <li>Time Management</li>
+                        <li>Day trade Management</li>
+                        <li>Risk Management</li>
+                    </ul>
+                    <h5>Session 2: Online</h5>
+                    <ul class="list-block">
+                        <li> MetaTrader 4 (MT4) Platform</li>
+                        <li>Chart Analysis </li>
+                        <li> Candlestick, TrendLine, Support & Resistance and more.</li>
+                        <li> Fundamental Analysis</li>
+                        <li> Technical Analysis
+                        </li>
+                    </ul>
+                    <h5>Session 3:</h5>
+                    <ul class="list-block">
+                        <li> Demo Account creation</li>
+                        <li> Practice the Demo Account at least 30 days</li>
+                        <li> Once you become Confident in Demo A/c. Invest in Live Account.</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- ****** STRATEGY PRODUCT SERVICES ****** -->
+            <section id="strategy_service">
+                <div class="container">
+                    <h2>Strategy Product Services</h2>
                     <div class="row">
                         <div class="col col-3">
-                            <figure>
-                                <img src="images/lifetime-support.svg" alt="" />
-                            </figure>
-                            <figcaption>Forex Learning Program <em>(life time support)</em></figcaption>
+                            <div class="board">
+                                <div class="board__head">
+                                    <h4>Forex Long Term Strategy</h4>
+                                    <span class="price">$350</span>
+                                    <small>(Its a one time fee only)</small>
+                                </div>
+                                <div class="board__body">
+                                    <p>Are you tired of the time-consuming duty of watching the charts hour for hour as a day trader? Learn my jaw-dropping Long Term Strategy that I use to accumulate thousands of pips monthly.</p>
+                                    <div class="strong">
+                                        Included:
+                                    </div>
+                                    <ul>
+                                        <li>Well documented instructions</li>
+                                        <li>Chart Template Tools Included</li>
+                                    </ul>
+                                </div>
+                                <div class="board__foot">
+                                    <button class="btn btn-prime">Buy</button>
+                                </div>
+                            </div>
                         </div>
                         <div class="col col-3">
-                            <figure>
-                                <img src="images/trade-signals2.svg" alt="" />
-                            </figure>
-                            <figcaption>Forex Signal Servicing <em>(life time signals support)</em></figcaption>
+                            <div class="board">
+                                <div class="board__head">
+                                    <h4>Fast Money Strategy</h4>
+                                    <span class="price">$250</span>
+                                    <small>(Its a one time fee only)</small>
+                                </div>
+                                <div class="board__body">
+                                    <p>This short term strategy was created with day traders in mind. This strategy will allow traders to get in and out of the market, with profit potentials like that of long term trades.</p>
+                                    <div class="strong">
+                                        Included:
+                                    </div>
+                                    <ul>
+                                        <li>Well documented instructions</li>
+                                        <li>Chart Template Tools Included</li>
+                                    </ul>
+                                </div>
+                                <div class="board__foot">
+                                    <button class="btn btn-prime">Buy</button>
+                                </div>
+                            </div>
                         </div>
                         <div class="col col-3">
-                            <figure>
-                                <img src="images/account-management.svg" alt="" />
-                            </figure>
-                            <figcaption>Structured Account Management program</figcaption>
+                            <div class="board">
+                                <div class="board__head">
+                                    <h4>Combo Strategy</h4>
+                                    <span class="price">$550</span>
+                                    <small>(Its a one time fee only)</small>
+                                </div>
+                                <div class="board__body">
+                                    <p>Forex traders will enjoy both the Long and fast money Strategy taught together to receive "The Power Eye" that provides the foundation and ability to realize the most profit potential.</p>
+                                    <div class="strong">
+                                        Included:
+                                    </div>
+                                    <ul>
+                                        <li>Well documented instructions</li>
+                                        <li>Chart Template Tools Included</li>
+                                    </ul>
+                                </div>
+                                <div class="board__foot">
+                                    <button class="btn btn-prime">Buy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ******* SIGNAL SERVICING ******* -->
+            <section id="signal_service">
+                <div class="container">
+                    <h2>Signal Servicing</h2>
+                    <p>FOREX signals services are uniquely designed for the FOREX traders. With its huge volume and liquidity, it acts as a brilliant platform for day traders for making profits. FOREX markets require the study of the complete Global Market and any important international outcome anywhere in the world can impact any of the currency movements. Our Team of Analysts who specialize in FOREX markets keep a complete Global track of all the events and blend it with technical analysis to outperform the markets.</p>
+                    <p>If you have time during the day or week, review Forex market signals from your favorite source and expand your understanding of the global market laws.</p>
+                    <p>Our Team of Technical Analysis Experts has the ability to analyze the market effectively.</p>
+                    <p>We have an excellent Technical analysis and forecasting skills which brings greater rewards to our clientele.</p>
+                    <p> Our highly skilled team analyzes the past price movements of the stock and predict future price movements. Of the stock &amp; indices.</p>
+                    <p> Our trading ideas/strategies are being implemented after rigorous back testing on historical data over several years.</p>
+                    <p>Trading calls to boost their financial wealth.</p>
+                    <h4>What you Get?</h4>
+                    <ul class="list-block">
+                        <li>We provide recommendations for FOREX Currency, METAL (GOLD, SILVER), CRUDE, and INDIAN SHARES.</li>
+                        <li>We provide you around 5- 9 calls per day Proper entry exit level.</li>
+                        <li>We provide you good accuracy on a consistent basis.</li>
+                        <li>Calls Will Be Given by Mails, SMS &amp; Chat Room.</li>
+                    </ul>
+                    <h5>Subscribe Now</h5>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Monthly</th>
+                                <th>Quarterly</th>
+                                <th>Half yearly</th>
+                                <th>Yearly</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>$8500</td>
+                                <td>$17500</td>
+                                <td>$29000</td>
+                                <td>$45000</td>
+                            </tr>
+                            <tr>
+                                <td><a href="" class="btn btn-prime">Pay Now</a></td>
+                                <td><a href="" class="btn btn-prime">Pay Now</a></td>
+                                <td><a href="" class="btn btn-prime">Pay Now</a></td>
+                                <td><a href="" class="btn btn-prime">Pay Now</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <!-- ******* MQL4 CODING SERVICE ******* -->
+            <section id="coding_service">
+                <div class="container">
+                    <h2>MQL4 CODING SERVICE</h2>
+                    <p class="strong">HAVE A STRATEGY BUT NEED IT CODED? Now it’s Possible in our services!!!</p>
+                    <p>Our Service focuses on delivering knowledgeable support and high quality MT4 and MT5 MQL Programming Service. With our Custom Programming Services we aim to empower individual traders with customized solutions to suit their personal trading style.
+                    </p>
+                    <p>
+                        Veltrade Team understand both expert advisor programming and trading aspects in MetaTrader 4 and MetaTrader 5. Being real traders we understand your strategy or method to make an EA or indicators or scripts as per your requirements for both MT4 and MT5.</p>
+                    <h5>FOREX EXPERT ADVISOR/AUTO TRADING SOFTWARE DEVELOPMENT SERVICES:</h5>
+                    <ul class="list-block">
+                        <li>MQL4 - EA Development (Indicator, Algorithm and Strategy based EA Development). Modifying existing EA.</li>
+                        <li>Protect EA and Indicators (Encryption like USER ID, PASSWORD, TRAIL VERSION, and EXPIRY DATE).</li>
+                        <li> EA Optimization and Back test Support.
+                        </li>
+                        <li> Ex4 to MQ4 Conversion.
+                        </li>
+                        <li> Trade Copier and Signal EA Development.
+                        </li>
+                        <li> MQL4 to MQL5 Conversion.
+                        </li>
+                        <li> Expert Advisor License and Locking System.
+                        </li>
+                    </ul>
+                    <ul class="list-block">
+                        <li>Take Profit in pips or currency</li>
+                        <li>Stop Loss in pips or currency</li>
+                        <li>Trailing Stop in pips or currency</li>
+                        <li>Break Even</li>
+                        <li>Time range to trade – Trading Session</li>
+                        <li>Fixed lot size or risk in percent %</li>
+                        <li>Dynamic Take Profit, Stop Loss or Trailing Stop</li>
+                        <li>Slippage</li>
+                        <li>Magic Number</li>
+                        <li>Intelligent error handling – In this, trade opening/ modifying/ closing is performed in a loop to prevent errors</li>
+                        <li>All indicator settings can be set in EA</li>
+                        <li>Set a specific time to close all orders</li>
+                        <li>End of week closing time</li>
+                        <li>Email alert on trade open/modify/close</li>
+                        <li>Web alert on trade open/modify/close</li>
+                        <li>Hidden Sop Loss/Take Profit/Trailing Stop/Break Even. This can be different for every position</li>
+                        <li>"Lock-in" trading mechanism to help avoid “Trade Context Busy” errors</li>
+                        <li>Compatibility with 5 digit brokers</li>
+                        <li>Compatibility with ECN or any other MT4 brokers</li>
+                        <li>Sounds and/or alerts</li>
+                        <li>Max spread security feature</li>
+                        <li>"Screen shot" feature. EA can take a screen shot of the chart on trade open/close or any other trigger</li>
+                        <li>Various objects, arrows, support or resistance lines can be draw on the chart</li>
+                        <li>Server / Client trading</li>
+                        <li>DLL programming/ security</li>
+                        <li>All EAs can run on any timeframe and currency chart</li>
+                        <li>Maximum order limit feature controls how many orders can run at any given moment</li>
+                        <li>Account Equity Stop in percent or currency. This feature protects your account. No more will be lost than a given value, EA will stop trading if this value is reached</li>
+                        <li>Trade history feature logs error or any other messages.</li>
+                    </ul>
+                    <blockquote>For more details about our custom programming service and price quotation, please mail us <a href="mailto:veltrade@gmail.com">veltrade@gmail.com</a>
+                    </blockquote>
+                </div>
+            </section>
+            <!-- ******* CONTACT US ******* -->
+            <section id="contact" class="contact-form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2>contact us</h2>
                         </div>
                         <div class="col col-3">
-                            <figure>
-                                <img src="images/coding.svg" alt="" />
-                            </figure>
-                            <figcaption>CODING Service</figcaption>
+                            <h3>call us</h3>
+                            <p>1-800-000-0000</p>
+                        </div>
+                        <div class="col col-3">
+                            <h3>Email us</h3>
+                            <p><a href="mailto:support@veltrade.com">support@veltrade.com</a></p>
+                        </div>
+                        <div class="col col-3">
+                            <h3>follow us on</h3>
+                            <ul class="list-inline social-icons">
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                                            <path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero" fill="#3b5998" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                                            <path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero" fill="#00aced" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                                            <path d="M5.09 7.273v1.745h2.89c-.116.75-.873 2.197-2.887 2.197-1.737 0-3.155-1.44-3.155-3.215S3.353 4.785 5.09 4.785c.99 0 1.652.422 2.03.786l1.382-1.33c-.887-.83-2.037-1.33-3.41-1.33C2.275 2.91 0 5.19 0 8s2.276 5.09 5.09 5.09c2.94 0 4.888-2.065 4.888-4.974 0-.334-.036-.59-.08-.843H5.09zm10.91 0h-1.455V5.818H13.09v1.455h-1.454v1.454h1.455v1.455h1.46V8.727H16" fill="#dd4b39" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                                            <path d="M8.035 12.6c-2.685 0-3.885-1.322-3.885-2.313 0-.51.374-.865.89-.865 1.15 0 .85 1.653 2.995 1.653 1.096 0 1.703-.597 1.703-1.208 0-.368-.18-.775-.904-.954l-2.387-.597C4.524 7.833 4.175 6.79 4.175 5.812c0-2.034 1.91-2.798 3.704-2.798 1.65 0 3.6.916 3.6 2.136 0 .523-.46.827-.97.827-.98 0-.8-1.36-2.78-1.36-.98 0-1.53.444-1.53 1.08 0 .636.77.84 1.44.993l1.76.392c1.93.433 2.42 1.566 2.42 2.633 0 1.652-1.27 2.886-3.82 2.886m7.4-3.26l-.02.09-.03-.16c.01.03.03.05.04.08.08-.45.12-.91.12-1.37 0-1.02-.2-2.01-.6-2.95-.38-.9-.93-1.71-1.62-2.4-.7-.69-1.5-1.24-2.4-1.62C10.01.59 9.02.39 8 .39c-.48 0-.964.047-1.43.137l.08.04-.16-.023.08-.016C5.927.183 5.205 0 4.472 0 3.278 0 2.155.466 1.31 1.313.465 2.16 0 3.286 0 4.483c0 .763.195 1.512.563 2.175l.013-.083.028.16-.04-.077c-.076.43-.115.867-.115 1.305 0 1.022.2 2.014.59 2.948.38.91.92 1.72 1.62 2.41.69.7 1.5 1.24 2.4 1.63.93.4 1.92.6 2.94.6.44 0 .89-.04 1.32-.12l-.08-.04.16.03-.09.02c.67.38 1.42.58 2.2.58 1.19 0 2.31-.46 3.16-1.31.84-.84 1.31-1.97 1.31-3.17 0-.76-.2-1.51-.57-2.18" fill-rule="nonzero" fill="#12A5F4" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>Say hello!</h3>
+                            <form method="POST">
+                                <input type="text" name="name" placeholder="Name" required="" vk_1cdde="subscribed">
+                                <input type="email" name="email" placeholder="Email" required="">
+                                <input type="tel" name="tele" placeholder="Phone Number" required="" vk_1cdde="subscribed">
+                                <textarea placeholder="Message" name="msg" required=""> </textarea>
+                                <input type="submit" value="Send message">
+                            </form>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container" id="forex_training">
-                <p>We endeavor to offer the range of services required by an extensive client base, whether corporate or individual. We will give you the education in Forex that you desire. So that you can take this, and implement it into your trading.</p>
-                <h4>Get Trained (TRADING  DOESN'T HAVE TO BE SO HARD)</h4>
-                <div class="row">
-                    <div class="col">
-                        <p>We train you to be pro trader, also we teach you all commodities, shares, currency forex market with lifetime support.</p>
-                        <p>Our Forex Training provide Forex training the very easy way. Simply put, our clients can enjoy having Forex explained in layman’s terms and NOT being overwhelmed with a bunch of flam or unnecessary information about the market that’ll leave them confused.</p>
-                        <p>We focus on teaching our clients individually and makes a professional trader in the financial markets, and the world’s largest banks techniques to assure a profitable trading journey.</p>
-                        <p>Trading is a business that is needed in the development of self-control skills, money management skills and analytical skills.</p>
-                    </div>
-                </div>
-                <blockquote>VelTrade, finally make you an professional trader in Financial Markets.</blockquote>
-                <h4>Managed Account</h4>
-                <p>Don't have time for trading? No worries, we will manage your account if you choose one of our preferred broker for free.</p>
-                <h4>Signal services</h4>
-                <p>Receive our signals straight into your mailbox or access it on our telegram channel, pay monthly to make more than 500 to 600 pips and get up to 6 signals daily</p>
-                learn forex
-                <h2>Learn Forex</h2>
-                <div>
-                    <img src="images/learn-forex.svg" alt="">
-                </div>
-                <p class="strong">Forex Trading is 1% technical and 99% psychological. Losing capital is easier than making profits.</p>
-                <p>Attending our Forex Training you will easily learn and understand the method that will allow you to make consistency pips in a day with precise Trade Entry and Exits. Our Forex Training Programs you don't need any experience, we will elevate you from beginner level to intermediate level and to Expert Forex Trader level.</p>
-                <p>In our Forex Training you will learn Trading psychology, Cross Currency Analysis, Money Management, Risk Management with simple and efficient strategies used by big financial institutions etc. Learn and understand all these above Forex Training elements are important. So that you will adopt the ever changing, ever fluctuating financial Market. In Our Trainings method of teaching will make you to easily understand the Trading Strategies and by this you can earn consistent Profits. We will train you Do's and Don’ts that we learnt during our initial difficult times. We share our trading experience with you thus you will avoid the mistakes in your trading or you will implement the right strategies. </p>
-                <p class="strong">This Training is provided not only for a forex trader, but both were being given to people who are not familiar with trading though.</p>
-                <blockquote>VelTrade not only inviting you to join our Forex Training we also invite you to make consistent Profits.</blockquote>
-                <h3>Things should follow to be the SUCCESSFUL FOREX TRADER:</h3>
-                <ul class="list-block">
-                    <li>Never be greedy</li>
-                    <li>Never lose patience.</li>
-                    <li>Never be emotional.</li>
-                    <li>Never overtrade.</li>
-                    <li>Don’t get tips &amp; trade</li>
-                    <li>Don’t trade with others money.</li>
-                    <li>Don’t get loan, chit funds and make your trade risky.</li>
-                    <li>Do in your own name and in your own savings money.</li>
-                    <li>If you lose one or more trade continuously just stop the trade immediately &amp; relax yourself.</li>
-                    <li>Trade with your own confidence</li>
-                    <li>Don’t confuse yourself.</li>
-                    <li>Use indicators as a suggestion.</li>
-                </ul>
-                <p class="strong"><em>NOTE: Follow rules and regulations and be disciplined, patience.</em></p>
-                <h4>Course Topics:</h4>
-                <h5>Session 1: Offline</h5>
-                <ul class="list-block">
-                    <li> Fundamentals &amp; Basics of Forex </li>
-                    <li>Money Management</li>
-                    <li>Time Management</li>
-                    <li>Day trade Management</li>
-                    <li>Risk Management</li>
-                </ul>
-                <h5>Session 2: Online</h5>
-                <ul class="list-block">
-                    <li> MetaTrader 4 (MT4) Platform</li>
-                    <li>Chart Analysis </li>
-                    <li> Candlestick, TrendLine, Support & Resistance and more.</li>
-                    <li> Fundamental Analysis</li>
-                    <li> Technical Analysis
-                    </li>
-                </ul>
-                <h5>Session 3:</h5>
-                <ul class="list-block">
-                    <li> Demo Account creation</li>
-                    <li> Practice the Demo Account at least 30 days</li>
-                    <li> Once you become Confident in Demo A/c. Invest in Live Account.</li>
-                </ul>
-                <!-- Strategy Product Services -->
-                <h2 id="strategy_service">Strategy Product Services</h2>
-                <div class="board">
-                    <div class="board__head">
-                        <h4>Forex Long Term Strategy - <span>$350 <small>(Its a one time fee only)</small></span></h4>
-                    </div>
-                    <div class="board__body">
-                        <p>Are you tired of the time-consuming duty of watching the charts hour for hour as a day trader? Learn my jaw-dropping Long Term Strategy that I use to accumulate thousands of pips monthly.</p>
-                        <div class="strong">
-                            Included:
-                        </div>
-                        <ul>
-                            <li>Well documented instructions</li>
-                            <li>Chart Template Tools Included</li>
-                        </ul>
-                    </div>
-                    <div class="board__foot">
-                        <button class="btn btn__prime">Buy</button>
-                    </div>
-                </div>
-                <div class="board">
-                    <div class="board__head">
-                        <h4>Fast Money Strategy - <span>$250 <small>(Its a one time fee only)</small></span></h4>
-                    </div>
-                    <div class="board__body">
-                        <p>This short term strategy was created with day traders in mind. This strategy will allow traders to get in and out of the market, with profit potentials like that of long term trades.</p>
-                        <div class="strong">
-                            Included:
-                        </div>
-                        <ul>
-                            <li>Well documented instructions</li>
-                            <li>Chart Template Tools Included</li>
-                        </ul>
-                    </div>
-                    <div class="board__foot">
-                        <button class="btn btn__prime">Buy</button>
-                    </div>
-                </div>
-                <div class="board">
-                    <div class="board__head">
-                        <h4>Combo Strategy - <span>$550 <small>(Its a one time fee only)</small></span></h4>
-                    </div>
-                    <div class="board__body">
-                        <p>Forex traders will enjoy both the Long and fast money Strategy taught together to receive "The Power Eye" that provides the foundation and ability to realize the most profit potential.</p>
-                        <div class="strong">
-                            Included:
-                        </div>
-                        <ul>
-                            <li>Well documented instructions</li>
-                            <li>Chart Template Tools Included</li>
-                        </ul>
-                    </div>
-                    <div class="board__foot">
-                        <button class="btn btn__prime">Buy</button>
-                    </div>
-                </div>
-                <!-- Signal Servicing -->
-                <h2 id="signal_service">Signal Servicing</h2>
-                <p>FOREX signals services are uniquely designed for the FOREX traders. With its huge volume and liquidity, it acts as a brilliant platform for day traders for making profits. FOREX markets require the study of the complete Global Market and any important international outcome anywhere in the world can impact any of the currency movements. Our Team of Analysts who specialize in FOREX markets keep a complete Global track of all the events and blend it with technical analysis to outperform the markets.</p>
-                <p>If you have time during the day or week, review Forex market signals from your favorite source and expand your understanding of the global market laws.</p>
-                <p>Our Team of Technical Analysis Experts has the ability to analyze the market effectively.</p>
-                <p>We have an excellent Technical analysis and forecasting skills which brings greater rewards to our clientele.</p>
-                <p> Our highly skilled team analyzes the past price movements of the stock and predict future price movements. Of the stock &amp; indices.</p>
-                <p> Our trading ideas/strategies are being implemented after rigorous back testing on historical data over several years.</p>
-                <p>Trading calls to boost their financial wealth.</p>
-                <h4>What you Get?</h4>
-                <ul class="list-block">
-                    <li>We provide recommendations for FOREX Currency, METAL (GOLD, SILVER), CRUDE, and INDIAN SHARES.</li>
-                    <li>We provide you around 5- 9 calls per day Proper entry exit level.</li>
-                    <li>We provide you good accuracy on a consistent basis.</li>
-                    <li>Calls Will Be Given by Mails, SMS &amp; Chat Room.</li>
-                </ul>
-                <h5>Subrcibe Now</h5>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Monthly</th>
-                            <th>Quarterly</th>
-                            <th>Half yearly</th>
-                            <th>Yearly</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>$8500</td>
-                            <td>$17500</td>
-                            <td>$29000</td>
-                            <td>$45000</td>
-                        </tr>
-                        <tr>
-                            <td><a href="" class="btn btn__sec">Pay Now</a></td>
-                            <td><a href="" class="btn btn__sec">Pay Now</a></td>
-                            <td><a href="" class="btn btn__sec">Pay Now</a></td>
-                            <td><a href="" class="btn btn__sec">Pay Now</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- MQL4 CODING SERVICE -->
-                <h2 id="coding_service">MQL4 CODING SERVICE</h2>
-                <p class="strong">HAVE A STRATEGY BUT NEED IT CODED? Now it’s Possible in our services!!!</p>
-                <p>Our Service focuses on delivering knowledgeable support and high quality MT4 and MT5 MQL Programming Service. With our Custom Programming Services we aim to empower individual traders with customized solutions to suit their personal trading style.
-                </p>
-                <p>
-                    Veltrade Team understand both expert advisor programming and trading aspects in MetaTrader 4 and MetaTrader 5. Being real traders we understand your strategy or method to make an EA or indicators or scripts as per your requirements for both MT4 and MT5.</p>
-                <h5>FOREX EXPERT ADVISOR/AUTO TRADING SOFTWARE DEVELOPMENT SERVICES:</h5>
-                <ul class="list-block">
-                    <li>MQL4 - EA Development (Indicator, Algorithm and Strategy based EA Development). Modifying existing EA.</li>
-                    <li>Protect EA and Indicators (Encryption like USER ID, PASSWORD, TRAIL VERSION, and EXPIRY DATE).</li>
-                    <li> EA Optimization and Back test Support.
-                    </li>
-                    <li> Ex4 to MQ4 Conversion.
-                    </li>
-                    <li> Trade Copier and Signal EA Development.
-                    </li>
-                    <li> MQL4 to MQL5 Conversion.
-                    </li>
-                    <li> Expert Advisor License and Locking System.
-                    </li>
-                </ul>
-                <ul class="list-block">
-                    <li>Take Profit in pips or currency</li>
-                    <li>Stop Loss in pips or currency</li>
-                    <li>Trailing Stop in pips or currency</li>
-                    <li>Break Even</li>
-                    <li>Time range to trade – Trading Session</li>
-                    <li>Fixed lot size or risk in percent %</li>
-                    <li>Dynamic Take Profit, Stop Loss or Trailing Stop</li>
-                    <li>Slippage</li>
-                    <li>Magic Number</li>
-                    <li>Intelligent error handling – In this, trade opening/ modifying/ closing is performed in a loop to prevent errors</li>
-                    <li>All indicator settings can be set in EA</li>
-                    <li>Set a specific time to close all orders</li>
-                    <li>End of week closing time</li>
-                    <li>Email alert on trade open/modify/close</li>
-                    <li>Web alert on trade open/modify/close</li>
-                    <li>Hidden Sop Loss/Take Profit/Trailing Stop/Break Even. This can be different for every position</li>
-                    <li>"Lock-in" trading mechanism to help avoid “Trade Context Busy” errors</li>
-                    <li>Compatibility with 5 digit brokers</li>
-                    <li>Compatibility with ECN or any other MT4 brokers</li>
-                    <li>Sounds and/or alerts</li>
-                    <li>Max spread security feature</li>
-                    <li>"Screen shot" feature. EA can take a screen shot of the chart on trade open/close or any other trigger</li>
-                    <li>Various objects, arrows, support or resistance lines can be draw on the chart</li>
-                    <li>Server / Client trading</li>
-                    <li>DLL programming/ security</li>
-                    <li>All EAs can run on any timeframe and currency chart</li>
-                    <li>Maximum order limit feature controls how many orders can run at any given moment</li>
-                    <li>Account Equity Stop in percent or currency. This feature protects your account. No more will be lost than a given value, EA will stop trading if this value is reached</li>
-                    <li>Trade history feature logs error or any other messages.</li>
-                </ul>
-                <blockquote>For more details about our custom programming service and price quotation, please mail us <a href="mailto:veltrade@gmail.com">veltrade@gmail.com</a>
-                </blockquote>
-            </div>
+            </section>
         </main>
+        <!-- *************************** FOOTER CONTENT *************************** -->
         <footer>
+            <div class="container">
+                <p class="no-margin">© Copyright 2010-2017 VelTrade | All Rights Reserved.</p>
+            </div>
         </footer>
     </div>
     <a id="bullbear" href="#">bullbear</a>

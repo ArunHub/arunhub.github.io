@@ -110,7 +110,7 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
   font-size: 1.2rem;
-  color: #87898f;
+  color: #666;
   letter-spacing: 0.5px;
 }
 
@@ -408,11 +408,12 @@ nav .menu > li:hover a + .menu__tools {
 
 nav .menu a {
   display: block;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: darkgreen;
   padding: 1rem 0;
   font-size: 0.9rem;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav .menu a:hover,
@@ -445,13 +446,18 @@ nav .menu a + .menu__tools a:hover {
 
 .fourprinciples {
   padding: 2rem 0;
-  background: cornsilk;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .fourprinciples figure {
   width: 80%;
   margin: 0 auto 10px;
+}
+
+.fourprinciples figure svg {
+  max-width: 100%;
+  width: 100%;
 }
 
 #forex_training,
@@ -473,9 +479,13 @@ nav .menu a + .menu__tools a:hover {
 
 .contact-form h3 {
   color: initial;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin: 1rem 0;
+}
+
+.contact-form h4 {
+  font-size: 1.2rem;
 }
 
 .contact-form input[type="text"],

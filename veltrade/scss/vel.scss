@@ -243,7 +243,7 @@ section {
 
 blockquote {
     position: relative;
-    padding: 1.6rem;
+    padding: 1.6rem;    
     background: $color4;
     border-left: 10px solid $color3;
     color: $color2;
@@ -272,8 +272,12 @@ ul.list-block {
     padding-left: 1rem;
     li {
         position: relative;
-        padding-left: 1.5rem;
-        margin-bottom: 0.5rem;
+        padding-left: 2rem;
+
+        &:not(:last-child){
+            margin-bottom: 0.5rem;
+        }
+        
         &:before {
             content: "";
             position: absolute;
@@ -456,9 +460,44 @@ main {
     }
 }
 
+.paper{
+    position: relative;
+    z-index: 10;
+    padding:2rem;
+    margin: 4rem 0 2rem;
+
+    &:before,&:after{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background:white;
+        border:1px solid #e5e5e5;
+        box-shadow:0 0 10px rgba(0,0,0,.2);
+        transform: rotate(0);
+    }
+
+    &:after{
+        transform: rotate(2deg);
+    }
+
+    h3{
+        text-shadow: 3px 3px 1px rgba(237, 20, 61, 0.25);
+    }
+
+    .list-block{
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
 #forex_training,
 #signal_service {
-    background: honeydew;
+    background: honeydew url(..images/hexagons.svg);
 }
 
 #strategy_service {

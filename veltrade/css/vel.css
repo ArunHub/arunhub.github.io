@@ -265,7 +265,10 @@ ul.list-block {
 
 ul.list-block li {
   position: relative;
-  padding-left: 1.5rem;
+  padding-left: 2rem;
+}
+
+ul.list-block li:not(:last-child) {
   margin-bottom: 0.5rem;
 }
 
@@ -460,9 +463,44 @@ nav .menu a + .menu__tools a:hover {
   width: 100%;
 }
 
+.paper {
+  position: relative;
+  z-index: 10;
+  padding: 2rem;
+  margin: 4rem 0 2rem;
+}
+
+.paper:before, .paper:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: white;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: rotate(0);
+}
+
+.paper:after {
+  transform: rotate(2deg);
+}
+
+.paper h3 {
+  text-shadow: 3px 3px 1px rgba(237, 20, 61, 0.25);
+}
+
+.paper .list-block {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
 #forex_training,
 #signal_service {
-  background: honeydew;
+  background: honeydew url(..images/hexagons.svg);
 }
 
 #strategy_service {

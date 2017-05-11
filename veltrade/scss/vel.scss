@@ -270,6 +270,7 @@ blockquote {
 
 ul.list-block {
     padding-left: 1rem;
+    margin-bottom: 1rem;
     li {
         position: relative;
         padding-left: 2rem;
@@ -451,7 +452,7 @@ main {
     margin-bottom: 1rem;
     text-align: center;
     figure {
-        width: 80%;
+        width: 50%;
         margin: 0 auto 10px;
         svg{
             max-width: 100%;
@@ -485,19 +486,19 @@ main {
     }
 
     h3{
+        text-transform: uppercase;
         text-shadow: 3px 3px 1px rgba(237, 20, 61, 0.25);
     }
 
     .list-block{
         border-bottom: 1px solid #ccc;
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
+        padding-bottom: 1rem;        
     }
 }
 
-#forex_training,
-#signal_service {
-    background: honeydew url(..images/hexagons.svg);
+#forex_training{
+    background: honeydew url(../images/hexagons.svg);
+    background-size: 20px;
 }
 
 #strategy_service {
@@ -507,8 +508,17 @@ main {
     }
 }
 
+#signal_service{
+    background: bisque url(../images/hexagons.svg);
+    background-size: 25px;
+}
+
+#coding_service{
+    background: url(../images/pattern1.png);
+}
+
 .contact-form {
-    background: aliceblue;
+    background: beige;
     h3 {
         color: initial;
         font-size: 1.5rem;

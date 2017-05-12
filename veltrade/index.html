@@ -60,7 +60,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="header__secondpart">
+            <div class="header__secondpart" id="scrollfix">
                 <div class="container">
                     <nav>
                         <h1 class="logo">
@@ -69,11 +69,11 @@
                             </a>
                         </h1>
                         <ul class="menu">
-                            <li><a href="#home">home</a></li>
-                            <li><a href="#forex_training">forex training</a></li>
-                            <li><a href="#strategy_service">strategy product services</a></li>
-                            <li><a href="#signal_service">Signal Servicing</a></li>
-                            <li><a href="#coding_service">MQL4 coding service</a></li>
+                            <li><a href="#" data-target="aboutus">home</a></li>
+                            <li><a href="#" data-target="forex_training">forex training</a></li>
+                            <li><a href="#" data-target="strategy_service">strategy product services</a></li>
+                            <li><a href="#" data-target="signal_service">Signal Servicing</a></li>
+                            <li><a href="#" data-target="coding_service">MQL4 coding service</a></li>
                             <li>
                                 <a href="#">tools</a>
                                 <ul class="menu__tools">
@@ -93,7 +93,7 @@
                                     <li><a target="_blank" href="">forex charts</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#contact">contact us</a></li>
+                            <li><a href="#" data-target="contact">contact us</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -106,7 +106,7 @@
                 <img src="images/homepage.jpg" alt="">
             </section>
             <!-- ******* About us ******* -->
-            <section id="home">
+            <section id="home" data-target="aboutus">
                 <div class="container">
                     <h2>About us</h2>
                     <p>VelTrade is one of the Service provider in forex training program and Signal services across the globe. We are into from 2014 with providing effective and innovative servicing to all Traders.</p>
@@ -165,7 +165,7 @@
                 </div>
             </section>
             <!-- ******* FOREX TRAINING ******* -->
-            <section id="forex_training">
+            <section id="forex_training" data-target="forex_training">
                 <div class="container">
                     <h2>Learn Forex</h2>
                     <div>
@@ -221,7 +221,7 @@
                 </div>
             </section>
             <!-- ****** STRATEGY PRODUCT SERVICES ****** -->
-            <section id="strategy_service">
+            <section id="strategy_service" data-target="strategy_service">
                 <div class="container">
                     <h2>Strategy Product Services</h2>
                     <div class="row">
@@ -295,7 +295,7 @@
                 </div>
             </section>
             <!-- ******* SIGNAL SERVICING ******* -->
-            <section id="signal_service">
+            <section id="signal_service" data-target="signal_service">
                 <div class="container">
                     <h2>Signal Servicing</h2>
                     <p>FOREX signals services are uniquely designed for the FOREX traders. With its huge volume and liquidity, it acts as a brilliant platform for day traders for making profits. FOREX markets require the study of the complete Global Market and any important international outcome anywhere in the world can impact any of the currency movements. Our Team of Analysts who specialize in FOREX markets keep a complete Global track of all the events and blend it with technical analysis to outperform the markets.</p>
@@ -342,7 +342,7 @@
                 </div>
             </section>
             <!-- ******* MQL4 CODING SERVICE ******* -->
-            <section id="coding_service">
+            <section id="coding_service" data-target="coding_service">
                 <div class="container">
                     <h2>MQL4 Coding Service</h2>
                     <p class="strong">HAVE A STRATEGY BUT NEED IT CODED? Now it’s Possible in our services!!!</p>
@@ -406,7 +406,7 @@
                 </div>
             </section>
             <!-- ******* CONTACT US ******* -->
-            <section id="contact" class="contact-form">
+            <section id="contact" class="contact-form" data-target="contact">
                 <div class="container">
                     <div class="row">
                         <div class="col">
@@ -483,6 +483,23 @@
     </div>
     <a id="bullbear" href="#">bullbear</a>
     <!--  JavaScript  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/jquery-scrolltofixed-min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#scrollfix').scrollToFixed();
+
+        $(document).on('click', '.menu > li > a', function(event) {
+            event.preventDefault();
+            console.log("text");
+            var target = "#" + this.getAttribute('data-target');
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 2000);
+        });
+
+    });
+    </script>
     <script src="js/vel.js"></script>
 </body>
 

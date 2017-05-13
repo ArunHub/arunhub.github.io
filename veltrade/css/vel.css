@@ -417,14 +417,13 @@ nav .menu a {
   padding: 1rem 0;
   font-size: 0.9rem;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color 0.3s linear;
 }
 
 nav .menu a:hover,
 nav .menu a :active,
 nav .menu a :focus {
   color: white;
-  font-weight: normal;
 }
 
 nav .menu a + .menu__tools {
@@ -446,6 +445,70 @@ nav .menu a + .menu__tools a {
 nav .menu a + .menu__tools a:hover {
   color: white;
   background: darkgreen;
+}
+
+.hero-image {
+  background: url(../images/homepage2.jpeg);
+  background-position: left;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.hero-image .image {
+  position: absolute;
+  width: auto;
+}
+
+.hero-image .image img {
+  width: auto;
+}
+
+.hero-image .image1 {
+  width: 150px;
+  left: 36%;
+  top: 4%;
+}
+
+.hero-image .image2 {
+  width: 150px;
+  left: 52%;
+  top: 50%;
+}
+
+.hero-image .image3 {
+  width: 150px;
+  left: 20%;
+  top: 50%;
+}
+
+.hero-image .image4 {
+  left: 20%;
+  top: 25%;
+}
+
+.hero-image .hero-heading {
+  text-align: center;
+  font-family: 'Patua One', cursive;
+  padding-top: 2rem;
+}
+
+.hero-image .hero-heading p {
+  font-size: 3rem;
+  color: white;
+  padding-bottom: 2rem;
+  border-bottom: 3px dashed #fff;
+  text-shadow: 2px 2px 10px rgba(237, 20, 61, 0.5);
+}
+
+.hero-image .hero-heading h2 {
+  font-size: 8rem;
+  color: #333;
+  text-shadow: 2px 2px 10px white;
+}
+
+.hero-image .hero-heading h2 span {
+  color: crimson;
 }
 
 .fourprinciples {

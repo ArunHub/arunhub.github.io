@@ -428,18 +428,20 @@ nav .menu a :focus {
 
 nav .menu a + .menu__tools {
   position: absolute;
+  z-index: 100;
   display: none;
   text-align: left;
   transform-origin: top;
   transition: all 0.3s ease-out;
   top: 100%;
-  min-width: 200px;
+  width: 250px;
   background: white;
   box-shadow: 0 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav .menu a + .menu__tools a {
-  padding: 1rem;
+  padding: 0.5rem;
+  text-transform: capitalize;
 }
 
 nav .menu a + .menu__tools a:hover {
@@ -453,38 +455,6 @@ nav .menu a + .menu__tools a:hover {
   height: 500px;
   width: 100%;
   position: relative;
-}
-
-.hero-image .image {
-  position: absolute;
-  width: auto;
-}
-
-.hero-image .image img {
-  width: auto;
-}
-
-.hero-image .image1 {
-  width: 150px;
-  left: 36%;
-  top: 4%;
-}
-
-.hero-image .image2 {
-  width: 150px;
-  left: 52%;
-  top: 50%;
-}
-
-.hero-image .image3 {
-  width: 150px;
-  left: 20%;
-  top: 50%;
-}
-
-.hero-image .image4 {
-  left: 20%;
-  top: 25%;
 }
 
 .hero-image .hero-heading {
@@ -585,11 +555,17 @@ nav .menu a + .menu__tools a:hover {
 }
 
 .contact-form {
-  background: beige;
+  background-image: url(../images/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.contact-form h2, .contact-form h3, .contact-form h4 {
+  color: #77AF9C;
 }
 
 .contact-form h3 {
-  color: initial;
   font-size: 1.5rem;
   font-weight: 600;
   margin: 1rem 0;
@@ -599,37 +575,54 @@ nav .menu a + .menu__tools a:hover {
   font-size: 1.2rem;
 }
 
+.contact-form p {
+  color: #c5c5c5;
+}
+
+.contact-form p a {
+  color: #c5c5c5;
+}
+
 .contact-form input[type="text"],
 .contact-form textarea,
-.contact-form input[type="tel"],
 .contact-form input[type="email"] {
-  width: 100%;
-  border-right: none;
-  border-left: none;
-  border-top: none;
-  border-bottom: 2px ridge #DBDBDB;
+  width: 48.7%;
+  border: 2px ridge #DBDBDB;
   outline: none;
   padding: 1rem 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   background: transparent;
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.contact-form input[type="text"] {
+  margin-right: 1%;
+  display: inline-block;
+}
+
+.contact-form input[type="email"] {
+  margin-left: 1%;
+  display: inline-block;
 }
 
 .contact-form textarea {
+  width: 100%;
   height: 100px;
-  outline: none;
-  border-bottom: 1px ridge #DBDBDB;
   resize: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 .contact-form input[type="submit"] {
-  background: url("../images/msg-icon.png") no-repeat 0px 0px;
-  height: 23px;
+  background: transparent;
+  color: white;
+  height: 50px;
   width: 167px;
   display: block;
   outline: none;
-  text-indent: 30px;
-  border: none;
-  margin: 1rem 0;
+  border: 2px ridge #DBDBDB;
+  margin: auto;
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;

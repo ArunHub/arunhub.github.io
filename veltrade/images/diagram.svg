@@ -2,6 +2,55 @@
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+	 	 <style>
+	 	 	.line{
+			-moz-transition:all 0.3s ease-out;
+			-o-transition:all 0.3s ease-out;
+			-webkit-transition:all 0.3s ease-out;
+				transition:all 0.3s ease-out;
+	 	 	}
+	 	.yellowline{
+			fill:#EAA03D;
+	 	}
+	 	.greenline{
+	 		fill:#526D3E;
+	 	}
+	 	.blueline{
+	 		fill:#486D9A;
+	 	}
+	 	.redline{
+	 		fill:#B72C11;
+	 	}
+	 	svg:hover .blueline{
+	 		fill:#0073ff;
+	 	}
+	 	svg:hover .redline{
+	 		fill:#ff2900;
+	 	}
+	 	svg:hover .yellowline{
+	 		fill:#ff9200;
+	 	}
+	 	svg:hover .greenline{
+			fill:#6dff00;
+	 	}
+	 	svg:hover .greenlin{
+	 		animation-name:lines;
+	 		animation-timing-function:ease;
+	 		animation-duration:0.6s;
+	 		animation-delay:1s;
+	 		animation-iteration-count:infinite;
+	 	}
+	 	
+	 	@keyframes lines{
+	 		from{
+	 		fill:#526D3E;
+	 		}
+	 		to{
+	 		fill:#6dff00;
+	 		}
+	 	}
+	 	
+	 </style>
 <path style="fill:#C6C5CB;" d="M223.124,498.52V389.08h65.752v109.44c0,3.278-2.657,5.935-5.935,5.935H229.06
 	C225.781,504.455,223.124,501.798,223.124,498.52z"/>
 <path style="fill:#ACABB1;" d="M261.935,491.56c-3.278,0-5.935-2.657-5.935-5.935v-96.544h-32.876v109.44
@@ -32,10 +81,10 @@
 		c58.633-35.83,102.566-74.475,130.857-115.061l5.468,16.404c1.412,4.235,5.989,6.521,10.226,5.112
 		C327.465,79.016,329.755,74.437,328.343,70.201z"/>
 </g>
-<path style="fill:#EAA03D;" d="M223.124,190.787h-13.33c-4.544,0-8.228,3.683-8.228,8.228v143.756h21.558V190.787z"/>
-<path style="fill:#526D3E;" d="M299.116,126.114h-13.869c-4.544,0-8.228,3.683-8.228,8.228v208.429h22.097V126.114z"/>
-<path style="fill:#486D9A;" d="M374.568,7.545h-13.869c-4.543,0-8.228,3.683-8.228,8.228v326.998h22.097V7.545z"/>
-<path style="fill:#B72C11;" d="M148.211,244.682h-13.869c-4.544,0-8.228,3.683-8.228,8.228v89.861h22.097V244.682z"/>
+<path class="line yellowline" d="M223.124,190.787h-13.33c-4.544,0-8.228,3.683-8.228,8.228v143.756h21.558V190.787z"/>
+<path class="line greenline" d="M299.116,126.114h-13.869c-4.544,0-8.228,3.683-8.228,8.228v208.429h22.097V126.114z"/>
+<path class="line blueline" d="M374.568,7.545h-13.869c-4.543,0-8.228,3.683-8.228,8.228v326.998h22.097V7.545z"/>
+<path class="line redline" d="M148.211,244.682h-13.869c-4.544,0-8.228,3.683-8.228,8.228v89.861h22.097V244.682z"/>
 <path d="M492.378,97.011h-88.167V8.084c0-4.466-3.62-8.084-8.084-8.084H353.01c-4.465,0-8.084,3.618-8.084,8.084v88.926h-69.101
 	c12.13-12.485,22.714-25.194,31.711-38.1l5.468,16.404c1.412,4.235,5.989,6.521,10.226,5.112c4.236-1.412,6.525-5.991,5.114-10.226
 	l-10.779-32.337c-0.113-0.34-0.253-0.661-0.405-0.974c-0.038-0.077-0.077-0.152-0.116-0.227c-0.144-0.275-0.301-0.54-0.473-0.792
@@ -66,34 +115,4 @@
 	s3.62,8.084,8.084,8.084h334.147c4.465,0,8.084-3.618,8.084-8.084s-3.62-8.084-8.084-8.084h-24.253V156.295h59.284V391.053z
 	 M237.137,199.411v134.737h-26.947V199.411H237.137z M161.684,253.305v80.842h-26.947v-80.842H161.684z M495.832,136.673
 	c0,1.905-1.55,3.454-3.454,3.454h-88.167v-26.947h88.167c1.905,0,3.454,1.55,3.454,3.454V136.673z"/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
 </svg>

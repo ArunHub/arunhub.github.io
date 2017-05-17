@@ -3,54 +3,55 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 	 	 <style>
-	 	 	.line{
+	 	 	svg *{
 			-moz-transition:all 0.3s ease-out;
 			-o-transition:all 0.3s ease-out;
 			-webkit-transition:all 0.3s ease-out;
 				transition:all 0.3s ease-out;
 	 	 	}
+	 	.redline{
+	 		fill:#B72C11;			
+	 	}
 	 	.yellowline{
-			fill:#EAA03D;
+			fill:#EAA03D;			
 	 	}
 	 	.greenline{
-	 		fill:#526D3E;
+	 		fill:#526D3E;			
 	 	}
 	 	.blueline{
-	 		fill:#486D9A;
-	 	}
-	 	.redline{
-	 		fill:#B72C11;
-	 	}
-	 	svg:hover .blueline{
-	 		fill:#0073ff;
-	 	}
+	 		fill:#486D9A;			
+	 	}	 	
+	 	
 	 	svg:hover .redline{
 	 		fill:#ff2900;
+	 		-moz-transition-delay:0.3s;
+			-o-transition-delay:0.3s;
+			-webkit-transition-delay:0.3s;
+			transition-delay:0.3s;
 	 	}
 	 	svg:hover .yellowline{
 	 		fill:#ff9200;
+	 		-moz-transition-delay:0.5s;
+			-o-transition-delay:0.5s;
+			-webkit-transition-delay:0.5s;
+			transition-delay:0.5s;
 	 	}
 	 	svg:hover .greenline{
-			fill:#6dff00;
+			fill:#65ca1a;
+			-moz-transition-delay:0.7s;
+			-o-transition-delay:0.7s;
+			-webkit-transition-delay:0.7s;
+			transition-delay:0.7s;
 	 	}
-	 	svg:hover .greenlin{
-	 		animation-name:lines;
-	 		animation-timing-function:ease;
-	 		animation-duration:0.6s;
-	 		animation-delay:1s;
-	 		animation-iteration-count:infinite;
-	 	}
-	 	
-	 	@keyframes lines{
-	 		from{
-	 		fill:#526D3E;
-	 		}
-	 		to{
-	 		fill:#6dff00;
-	 		}
-	 	}
-	 	
+	 	svg:hover .blueline{
+	 		fill:#0073ff;
+	 		-moz-transition-delay:0.9s;
+			-o-transition-delay:0.9s;
+			-webkit-transition-delay:0.9s;
+			transition-delay:0.9s;
+	 	}	 	
 	 </style>
+	 
 <path style="fill:#C6C5CB;" d="M223.124,498.52V389.08h65.752v109.44c0,3.278-2.657,5.935-5.935,5.935H229.06
 	C225.781,504.455,223.124,501.798,223.124,498.52z"/>
 <path style="fill:#ACABB1;" d="M261.935,491.56c-3.278,0-5.935-2.657-5.935-5.935v-96.544h-32.876v109.44
@@ -62,14 +63,14 @@
 <path style="fill:#486D9A;" d="M492.378,104.556H19.622c-6.659,0-12.077,5.417-12.077,12.077v20.04
 	c0,6.659,5.417,12.077,12.077,12.077h472.756c6.659,0,12.077-5.417,12.077-12.077v-20.04
 	C504.455,109.973,499.037,104.556,492.378,104.556z"/>
-<path style="fill:#5683BF;" d="M352.472,342.771V15.773c0-4.543,3.684-8.228,8.228-8.228h27.737c4.544,0,8.228,3.684,8.228,8.228
+<path class="blueline" d="M352.472,342.771V15.773c0-4.543,3.684-8.228,8.228-8.228h27.737c4.544,0,8.228,3.684,8.228,8.228
 	v326.998H352.472z"/>
-<path style="fill:#6F934F;" d="M277.019,342.771V134.341c0-4.544,3.684-8.228,8.228-8.228h27.737c4.544,0,8.228,3.684,8.228,8.228
+<path class="greenline" d="M277.019,342.771V134.341c0-4.544,3.684-8.228,8.228-8.228h27.737c4.544,0,8.228,3.684,8.228,8.228
 	v208.429H277.019z"/>
-<path style="fill:#ECB45D;" d="M201.566,342.771V199.015c0-4.544,3.684-8.228,8.228-8.228h27.737c4.544,0,8.228,3.684,8.228,8.228
+<path class="yellowline" d="M201.566,342.771V199.015c0-4.544,3.684-8.228,8.228-8.228h27.737c4.544,0,8.228,3.684,8.228,8.228
 	v143.756H201.566z"/>
 <g>
-	<path style="fill:#CD5838;" d="M126.114,342.771V252.91c0-4.544,3.684-8.228,8.228-8.228h27.737c4.544,0,8.228,3.684,8.228,8.228
+	<path class="redline" d="M126.114,342.771V252.91c0-4.544,3.684-8.228,8.228-8.228h27.737c4.544,0,8.228,3.684,8.228,8.228
 		v89.861H126.114z"/>
 	<path style="fill:#CD5838;" d="M328.343,70.201l-10.779-32.337c-0.998-2.994-3.649-5.135-6.788-5.479
 		c-0.144-0.016-0.286-0.008-0.429-0.016c0.001-0.004,0.002-0.01,0.003-0.014c-0.188-0.011-0.377-0.009-0.566-0.006
@@ -81,10 +82,10 @@
 		c58.633-35.83,102.566-74.475,130.857-115.061l5.468,16.404c1.412,4.235,5.989,6.521,10.226,5.112
 		C327.465,79.016,329.755,74.437,328.343,70.201z"/>
 </g>
-<path class="line yellowline" d="M223.124,190.787h-13.33c-4.544,0-8.228,3.683-8.228,8.228v143.756h21.558V190.787z"/>
-<path class="line greenline" d="M299.116,126.114h-13.869c-4.544,0-8.228,3.683-8.228,8.228v208.429h22.097V126.114z"/>
-<path class="line blueline" d="M374.568,7.545h-13.869c-4.543,0-8.228,3.683-8.228,8.228v326.998h22.097V7.545z"/>
-<path class="line redline" d="M148.211,244.682h-13.869c-4.544,0-8.228,3.683-8.228,8.228v89.861h22.097V244.682z"/>
+<path class="yellowline" d="M223.124,190.787h-13.33c-4.544,0-8.228,3.683-8.228,8.228v143.756h21.558V190.787z"/>
+<path class="greenline" d="M299.116,126.114h-13.869c-4.544,0-8.228,3.683-8.228,8.228v208.429h22.097V126.114z"/>
+<path class="blueline" d="M374.568,7.545h-13.869c-4.543,0-8.228,3.683-8.228,8.228v326.998h22.097V7.545z"/>
+<path class="redline" d="M148.211,244.682h-13.869c-4.544,0-8.228,3.683-8.228,8.228v89.861h22.097V244.682z"/>
 <path d="M492.378,97.011h-88.167V8.084c0-4.466-3.62-8.084-8.084-8.084H353.01c-4.465,0-8.084,3.618-8.084,8.084v88.926h-69.101
 	c12.13-12.485,22.714-25.194,31.711-38.1l5.468,16.404c1.412,4.235,5.989,6.521,10.226,5.112c4.236-1.412,6.525-5.991,5.114-10.226
 	l-10.779-32.337c-0.113-0.34-0.253-0.661-0.405-0.974c-0.038-0.077-0.077-0.152-0.116-0.227c-0.144-0.275-0.301-0.54-0.473-0.792

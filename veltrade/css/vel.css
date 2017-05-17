@@ -135,7 +135,7 @@ a {
   text-decoration: none;
 }
 
-img {
+img, embed {
   max-width: 100%;
   width: 100%;
 }
@@ -469,12 +469,17 @@ nav .menu a + .menu__tools a:hover {
   padding-bottom: 2rem;
   border-bottom: 3px dashed #fff;
   text-shadow: 2px 2px 10px rgba(237, 20, 61, 0.5);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.4s ease-out,opacity 0.2s ease-out;
 }
 
 .hero-image .hero-heading h2 {
+  transform: scale(0);
   font-size: 8rem;
   color: #333;
   text-shadow: 2px 2px 10px white;
+  transition: transform 0.3s ease-in-out;
 }
 
 .hero-image .hero-heading h2 span {

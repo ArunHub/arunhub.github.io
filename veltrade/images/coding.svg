@@ -2,6 +2,50 @@
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+	 	 <style>
+	 	 	svg *{
+	 	 	-moz-transition:all 0.3s ease-out;
+			-o-transition:all 0.3s ease-out;
+			-webkit-transition:all 0.3s ease-out;
+			transition:all 0.3s ease-out;
+	 	 	}
+	 	 	.red{
+		 	 	fill:#CD5838;
+		 	 	-moz-transition-delay:0s;
+				-o-transition-delay:0s;
+				-webkit-transition-delay:0s;
+				transition-delay:0s;
+	 	 	}
+	 	.yellow{
+			fill:#ECB45D;
+			-moz-transition-delay:0.5s;
+			-o-transition-delay:0.5s;
+			-webkit-transition-delay:0.5s;
+			transition-delay:0.5s;			
+	 	}
+	 	.green{
+	 		fill:#6F934F;
+	 		-moz-transition-delay:0.8s;
+			-o-transition-delay:0.8s;
+			-webkit-transition-delay:0.8s;
+			transition-delay:0.8s;	
+	 	}
+	 	svg:hover .code1{
+	 	  transform: translateX(-20px);
+	 	}
+	 	svg:hover .code2{
+	 	  transform: translateX(20px);
+	 	}
+	 	svg:hover .red{
+			fill:#d22d00;
+	 	}
+	 	svg:hover .yellow{
+			fill:#ff9b00;
+	 	}
+	 	svg:hover .green{
+			fill:#65d600;
+	 	}
+	 </style>
 <circle style="fill:#CD5838;" cx="256" cy="266.854" r="237.676"/>
 <path style="fill:#E6E7E4;" d="M256,504.455c-83.154,0-161.366-44.404-204.117-115.886l-1.222-2.044V80.842h410.678v305.683
 	l-1.222,2.044C417.366,460.051,339.154,504.455,256,504.455z"/>
@@ -12,13 +56,13 @@
 	/>
 <path style="fill:#486D9A;" d="M128.926,7.545H75.031c-13.437,0-24.37,10.933-24.37,24.37v62.939h53.895V31.915
 	C104.556,18.478,115.489,7.545,128.926,7.545z"/>
-<circle style="fill:#CD5838;" cx="94.316" cy="51.2" r="21.558"/>
-<circle style="fill:#ECB45D;" cx="158.989" cy="51.2" r="21.558"/>
-<circle style="fill:#6F934F;" cx="223.663" cy="51.2" r="21.558"/>
-<path d="M185.609,283.275c1.579,1.578,3.649,2.367,5.717,2.367s4.138-0.789,5.717-2.367c3.157-3.158,3.157-8.276,0-11.433
+<circle class="red" cx="94.316" cy="51.2" r="21.558"/>
+<circle class="yellow" cx="158.989" cy="51.2" r="21.558"/>
+<circle class="green" cx="223.663" cy="51.2" r="21.558"/>
+<path class="code1" d="M185.609,283.275c1.579,1.578,3.649,2.367,5.717,2.367s4.138-0.789,5.717-2.367c3.157-3.158,3.157-8.276,0-11.433
 	l-58.959-58.958l58.958-58.957c3.157-3.158,3.157-8.276,0-11.433c-3.158-3.156-8.276-3.156-11.433,0l-64.674,64.674
 	c-3.157,3.158-3.157,8.276,0,11.433L185.609,283.275z"/>
-<path d="M314.957,283.275c1.579,1.578,3.649,2.367,5.717,2.367s4.138-0.789,5.717-2.367l64.674-64.674
+<path class="code2" d="M314.957,283.275c1.579,1.578,3.649,2.367,5.717,2.367s4.138-0.789,5.717-2.367l64.674-64.674
 	c3.157-3.158,3.157-8.276,0-11.433l-64.674-64.674c-3.158-3.156-8.276-3.156-11.433,0c-3.157,3.158-3.157,8.276,0,11.433
 	l58.958,58.957l-58.958,58.957C311.8,274.999,311.8,280.117,314.957,283.275z"/>
 <path d="M231.332,285.02c1.016,0.425,2.07,0.624,3.107,0.624c3.167,0,6.172-1.872,7.465-4.977l53.895-129.347
@@ -41,34 +85,4 @@
 	S100.518,453.089,59.284,384.142V102.4h251.38c4.465,0,8.084-3.62,8.084-8.084l0,0c0-4.465-3.62-8.084-8.084-8.084H59.284V31.915
 	c0-8.696,7.051-15.747,15.747-15.747h361.937c8.698,0,15.748,7.051,15.748,15.747V86.232z M468.884,182.164
 	c10.637,26.787,16.168,55.517,16.168,84.615s-5.532,57.828-16.168,84.615V182.164z"/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
 </svg>

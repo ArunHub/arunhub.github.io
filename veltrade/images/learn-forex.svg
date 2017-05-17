@@ -4,6 +4,36 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="907.746px" height="151.408px" viewBox="0 0 907.746 151.408" enable-background="new 0 0 907.746 151.408"
 	 xml:space="preserve">
+	 <style>
+	 	 	svg *{
+			-moz-transition:all 0.3s ease-out;
+			-o-transition:all 0.3s ease-out;
+			-webkit-transition:all 0.3s ease-out;
+				transition:all 0.3s ease-out;
+	 	 	}
+
+	 	 	.arrow1{
+	 	 		animation:arrow 2s infinite;
+	 	 	}
+
+	 	 	.arrow2{
+	 	 		animation:arrow 2s infinite 0.4s;
+	 	 	}
+
+	 	 	.arrow3{
+	 	 		animation:arrow 2s infinite 0.8s;
+	 	 	}
+
+	 	 	@keyframes arrow{
+	 	 		from{
+	 	 			fill: #fff;
+	 	 		}
+	 	 		to{
+	 	 			fill: #207B50;
+	 	 		}
+	 	 	}
+	
+	 </style>
 <g>
 	<rect x="10.254" y="19.085" fill="#FFFFFF" width="190" height="120"/>
 	<g>
@@ -323,7 +353,7 @@
 			
 				<rect x="185.334" y="64.06" transform="matrix(-0.9994 0.0345 -0.0345 -0.9994 402.6358 152.9191)" fill="none" width="29.331" height="31.739"/>
 			<g>
-				<polygon fill="#207B50" points="185.89,96.295 201.202,79.888 184.796,64.575 198.249,64.111 214.657,79.424 199.343,95.831 
+				<polygon class="arrow1" points="185.89,96.295 201.202,79.888 184.796,64.575 198.249,64.111 214.657,79.424 199.343,95.831 
 									"/>
 			</g>
 		</g>
@@ -335,7 +365,7 @@
 			
 				<rect x="419.25" y="62.651" transform="matrix(-0.9984 0.0571 -0.0571 -0.9984 871.6039 132.1591)" fill="none" width="29.331" height="31.739"/>
 			<g>
-				<polygon fill="#207B50" points="420.179,95.202 435.117,78.453 418.368,63.514 431.807,62.746 448.557,77.684 433.618,94.434 
+				<polygon class="arrow2" points="420.179,95.202 435.117,78.453 418.368,63.514 431.807,62.746 448.557,77.684 433.618,94.434 
 									"/>
 			</g>
 		</g>
@@ -347,7 +377,7 @@
 			
 				<rect x="654.574" y="62.651" transform="matrix(-0.9986 0.0526 -0.0526 -0.9986 1341.6809 121.7586)" fill="none" width="29.331" height="31.739"/>
 			<g>
-				<polygon fill="#207B50" points="655.428,95.14 670.441,78.458 653.76,63.444 667.202,62.737 683.885,77.75 668.871,94.432 				
+				<polygon class="arrow3" points="655.428,95.14 670.441,78.458 653.76,63.444 667.202,62.737 683.885,77.75 668.871,94.432 				
 					"/>
 			</g>
 		</g>

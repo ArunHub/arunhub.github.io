@@ -373,6 +373,8 @@ header {
             height: 30px;
             svg {
                 transition: all 0.3s ease;
+                width:30px;
+                height:30px;
             }
             &:hover svg {
                 transform: translateY(-5px);

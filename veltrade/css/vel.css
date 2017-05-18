@@ -374,6 +374,8 @@ header .header__secondpart {
 
 .social-icons li a svg {
   transition: all 0.3s ease;
+  width: 30px;
+  height: 30px;
 }
 
 .social-icons li a:hover svg {

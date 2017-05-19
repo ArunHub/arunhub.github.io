@@ -34,6 +34,7 @@
 	 	 	}
 	
 	 </style>
+	 <animate attributeName="fill" values="#29e; #4e4; #f40; #29e" dur="6s" repeatCount="indefinite" />
 <g>
 	<rect x="10.254" y="19.085" fill="#FFFFFF" width="190" height="120"/>
 	<g>

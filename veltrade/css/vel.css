@@ -262,6 +262,7 @@ blockquote:before {
 ul.list-block {
   padding-left: 1rem;
   margin-bottom: 1rem;
+  font-family: cursive;
 }
 
 ul.list-block li {
@@ -540,7 +541,7 @@ nav .menu a + .menu__tools a:hover {
 }
 
 #forex_training {
-  background: honeydew url(../images/hexagons.svg);
+  background: white;
   background-size: 20px;
 }
 
@@ -553,7 +554,7 @@ nav .menu a + .menu__tools a:hover {
 }
 
 #signal_service {
-  background: bisque url(../images/hexagons.svg);
+  background: white;
   background-size: 25px;
 }
 

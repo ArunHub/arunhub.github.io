@@ -271,6 +271,7 @@ blockquote {
 ul.list-block {
     padding-left: 1rem;
     margin-bottom: 1rem;
+    font-family: cursive;
     li {
         position: relative;
         padding-left: 2rem;
@@ -528,7 +529,7 @@ main {
 }
 
 #forex_training {
-    background: honeydew url(../images/hexagons.svg);
+    background: white;
     background-size: 20px;
 }
 
@@ -540,7 +541,7 @@ main {
 }
 
 #signal_service {
-    background: bisque url(../images/hexagons.svg);
+    background: white;
     background-size: 25px;
 }
 

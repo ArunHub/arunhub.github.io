@@ -107,7 +107,7 @@ section {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.4;
   font-size: 1.2rem;
   color: #666;
@@ -223,6 +223,10 @@ section {
   padding: 50px 0;
 }
 
+section p, section figcaption {
+  color: #b9b9b9;
+}
+
 .no-padding {
   padding: 0;
 }
@@ -262,7 +266,6 @@ blockquote:before {
 ul.list-block {
   padding-left: 1rem;
   margin-bottom: 1rem;
-  font-family: cursive;
 }
 
 ul.list-block li {
@@ -352,7 +355,7 @@ header .header__firstpart {
 }
 
 header .header__secondpart {
-  background: #8CD790;
+  background: #1c2438;
 }
 
 .social-icons {
@@ -395,6 +398,7 @@ nav .logo {
 
 nav .logo a {
   display: block;
+  color: white;
 }
 
 nav .menu {
@@ -416,7 +420,7 @@ nav .menu > li:hover a + .menu__tools {
 nav .menu a {
   display: block;
   text-transform: uppercase;
-  color: darkgreen;
+  color: #9acd32;
   padding: 1rem 0;
   font-size: 0.9rem;
   font-weight: bold;
@@ -438,7 +442,7 @@ nav .menu a + .menu__tools {
   transition: all 0.3s ease-out;
   top: 100%;
   width: 250px;
-  background: white;
+  background: #1c2438;
   box-shadow: 0 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -449,7 +453,6 @@ nav .menu a + .menu__tools a {
 
 nav .menu a + .menu__tools a:hover {
   color: white;
-  background: darkgreen;
 }
 
 .hero-image {
@@ -549,10 +552,6 @@ nav .menu a + .menu__tools a:hover {
   color: #f2979d;
 }
 
-#whatforex p {
-  color: #b9b9b9;
-}
-
 #whatforex p img {
   float: left;
   width: 50%;
@@ -563,9 +562,38 @@ nav .menu a + .menu__tools a:hover {
   width: 25%;
 }
 
+#aboutus {
+  background: #489cea;
+  background: -moz-radial-gradient(center, ellipse cover, #489cea 0%, #253241 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #489cea), color-stop(100%, #253241));
+  background: -webkit-radial-gradient(center, ellipse cover, #489cea 0%, #253241 100%);
+  background: -o-radial-gradient(center, ellipse cover, #489cea 0%, #253241 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #489cea 0%, #253241 100%);
+  background: radial-gradient(ellipse at center, #489cea 0%, #253241 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#489cea', endColorstr='#253241', GradientType=1 );
+}
+
+#aboutus h2, #aboutus h3 {
+  color: #003569;
+}
+
 #forex_training {
-  background: white;
-  background-size: 20px;
+  background: #d4e4ef;
+  background: -moz-radial-gradient(center, ellipse cover, #d4e4ef 0%, #86aecc 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #d4e4ef), color-stop(100%, #86aecc));
+  background: -webkit-radial-gradient(center, ellipse cover, #d4e4ef 0%, #86aecc 100%);
+  background: -o-radial-gradient(center, ellipse cover, #d4e4ef 0%, #86aecc 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #d4e4ef 0%, #86aecc 100%);
+  background: radial-gradient(ellipse at center, #d4e4ef 0%, #86aecc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=1 );
+}
+
+#forex_training h2, #forex_training h4, #forex_training h5 {
+  color: #206da2;
+}
+
+#forex_training p {
+  color: #666;
 }
 
 #strategy_service {
@@ -577,8 +605,22 @@ nav .menu a + .menu__tools a:hover {
 }
 
 #signal_service {
-  background: white;
-  background-size: 25px;
+  background: #e9db16;
+  background: -moz-radial-gradient(center, ellipse cover, #e9db16 0%, #f0c789 89%, #f0c588 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #e9db16), color-stop(89%, #f0c789), color-stop(100%, #f0c588));
+  background: -webkit-radial-gradient(center, ellipse cover, #e9db16 0%, #f0c789 89%, #f0c588 100%);
+  background: -o-radial-gradient(center, ellipse cover, #e9db16 0%, #f0c789 89%, #f0c588 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #e9db16 0%, #f0c789 89%, #f0c588 100%);
+  background: radial-gradient(ellipse at center, #e9db16 0%, #f0c789 89%, #f0c588 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9db16', endColorstr='#f0c588', GradientType=1 );
+}
+
+#signal_service h2, #signal_service h5 {
+  color: #886500;
+}
+
+#signal_service p {
+  color: #666;
 }
 
 #coding_service {
@@ -642,7 +684,6 @@ nav .menu a + .menu__tools a:hover {
   width: 100%;
   height: 100px;
   resize: none;
-  font-family: 'Roboto', sans-serif;
 }
 
 .contact-form input[type="submit"] {
@@ -673,7 +714,7 @@ nav .menu a + .menu__tools a:hover {
 footer {
   padding: 2rem 0;
   color: white;
-  background: #285943;
+  background: #1c2438;
   text-align: center;
 }
 

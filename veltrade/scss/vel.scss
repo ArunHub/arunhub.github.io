@@ -528,6 +528,28 @@ main {
     }
 }
 
+#whatforex {
+    background: url(../images/grad-1.png);
+    background-size: cover;
+
+    h2, h3{
+        color: #f2979d;
+    }
+    p{
+        color: #b9b9b9;
+
+        img{
+            float: left;
+            width: 50%;
+            margin: 0 0px 10px 0;
+
+            &.angrybull{
+                width: 25%;
+            }
+        }
+    }
+}
+
 #forex_training {
     background: white;
     background-size: 20px;

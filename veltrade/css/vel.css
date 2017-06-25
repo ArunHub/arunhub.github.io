@@ -221,10 +221,16 @@ table tbody tr td:not(:last-child) {
 
 section {
   padding: 50px 0;
+  background: url(../images/grad-2.png);
+  background-size: cover;
 }
 
-section p, section figcaption {
-  color: #b9b9b9;
+section h2 {
+  color: #97d2ff;
+}
+
+section h3, section h4, section h5, section p, section figcaption {
+  color: white;
 }
 
 .no-padding {
@@ -270,6 +276,7 @@ ul.list-block {
 
 ul.list-block li {
   position: relative;
+  color: white;
   padding-left: 2rem;
 }
 
@@ -455,6 +462,16 @@ nav .menu a + .menu__tools a:hover {
   color: white;
 }
 
+#whatforex p img {
+  float: left;
+  width: 50%;
+  margin: 0 0px 10px 0;
+}
+
+#whatforex p img.angrybull {
+  width: 25%;
+}
+
 .hero-image {
   background: url(../images/homepage2.jpeg);
   background-position: left;
@@ -534,6 +551,7 @@ nav .menu a + .menu__tools a:hover {
 }
 
 .paper h3 {
+  color: #003569;
   text-transform: uppercase;
   text-shadow: 3px 3px 1px rgba(237, 20, 61, 0.25);
 }
@@ -543,99 +561,12 @@ nav .menu a + .menu__tools a:hover {
   padding-bottom: 1rem;
 }
 
-#whatforex {
-  background: url(../images/grad-1.png);
-  background-size: cover;
-}
-
-#whatforex h2, #whatforex h3 {
-  color: #f2979d;
-}
-
-#whatforex p img {
-  float: left;
-  width: 50%;
-  margin: 0 0px 10px 0;
-}
-
-#whatforex p img.angrybull {
-  width: 25%;
-}
-
-#aboutus {
-  background: #489cea;
-  background: -moz-radial-gradient(center, ellipse cover, #489cea 0%, #253241 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #489cea), color-stop(100%, #253241));
-  background: -webkit-radial-gradient(center, ellipse cover, #489cea 0%, #253241 100%);
-  background: -o-radial-gradient(center, ellipse cover, #489cea 0%, #253241 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #489cea 0%, #253241 100%);
-  background: radial-gradient(ellipse at center, #489cea 0%, #253241 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#489cea', endColorstr='#253241', GradientType=1 );
-}
-
-#aboutus h2, #aboutus h3 {
-  color: #003569;
-}
-
-#forex_training {
-  background: #d4e4ef;
-  background: -moz-radial-gradient(center, ellipse cover, #d4e4ef 0%, #86aecc 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #d4e4ef), color-stop(100%, #86aecc));
-  background: -webkit-radial-gradient(center, ellipse cover, #d4e4ef 0%, #86aecc 100%);
-  background: -o-radial-gradient(center, ellipse cover, #d4e4ef 0%, #86aecc 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #d4e4ef 0%, #86aecc 100%);
-  background: radial-gradient(ellipse at center, #d4e4ef 0%, #86aecc 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=1 );
-}
-
-#forex_training h2, #forex_training h4, #forex_training h5 {
-  color: #206da2;
-}
-
-#forex_training p {
+.paper .list-block li {
   color: #666;
-}
-
-#strategy_service {
-  background: url(../images/galaxy-spiral.png) no-repeat fixed;
-}
-
-#strategy_service h2 {
-  color: white;
-}
-
-#signal_service {
-  background: #e9db16;
-  background: -moz-radial-gradient(center, ellipse cover, #e9db16 0%, #f0c789 89%, #f0c588 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #e9db16), color-stop(89%, #f0c789), color-stop(100%, #f0c588));
-  background: -webkit-radial-gradient(center, ellipse cover, #e9db16 0%, #f0c789 89%, #f0c588 100%);
-  background: -o-radial-gradient(center, ellipse cover, #e9db16 0%, #f0c789 89%, #f0c588 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #e9db16 0%, #f0c789 89%, #f0c588 100%);
-  background: radial-gradient(ellipse at center, #e9db16 0%, #f0c789 89%, #f0c588 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9db16', endColorstr='#f0c588', GradientType=1 );
-}
-
-#signal_service h2, #signal_service h5 {
-  color: #886500;
-}
-
-#signal_service p {
-  color: #666;
-}
-
-#coding_service {
-  background: url(../images/pattern1.png);
 }
 
 .contact-form {
-  background-image: url(../images/contact-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
-}
-
-.contact-form h2, .contact-form h3, .contact-form h4 {
-  color: #77AF9C;
 }
 
 .contact-form h3 {

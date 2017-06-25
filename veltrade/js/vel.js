@@ -4,8 +4,8 @@ function animateToTop(event) {
     var scrollToTop = window.setInterval(function() {
         var position = window.pageYOffset;
         if (position > 0) {
-
             window.scrollTo(0, position - 20);
+            console.log("text",event);
         } else {
             window.clearInterval(scrollToTop);
         }

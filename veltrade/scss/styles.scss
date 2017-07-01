@@ -255,12 +255,13 @@ section {
 blockquote {
     position: relative;
     padding: 1.6rem;
-    background: $color4;
-    border-left: 10px solid $color3;
-    color: $color2;
-    font-size: 1.5rem;
+    background: #136ca7;
+    border-left: 10px solid #003050;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
     font-style: italic;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .07);
+    box-shadow: -5px 5px 5px rgba(255, 255, 255, 0.05);
     a {
         color: cornflowerblue;
         text-decoration: underline;
@@ -273,7 +274,7 @@ blockquote {
         font-size: 3rem;
         width: 30px;
         height: 40px;
-        background: $color3;
+        background: #003050;
         color: white;
         // background: radial-gradient(circle, green 0%, rgba(0, 0, 255, 0) 50%, red 95%);
     }
@@ -395,17 +396,21 @@ header {
     }
 }
 
+.logo {
+    width: 170px;
+    float: left;
+    margin: 0;
+    letter-spacing: initial;
+    a {
+    display: block;
+    color: white;
+    }
+}
+
 nav {
     display: flex;
     flex-direction: row;
-    .logo {
-        flex: 0 0 auto;
-        letter-spacing: initial;
-        a {
-            display: block;
-            color: white;
-        }
-    }
+
     .menu {
         display: flex;
         flex: 1;
@@ -476,6 +481,9 @@ nav {
 
 #strategy_service {
     // background: url(../images/galaxy-spiral.png) no-repeat fixed;
+    blockquote{
+        margin: 1rem 0;
+    }
 }
 
 #coding_service {

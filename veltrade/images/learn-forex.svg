@@ -36,7 +36,7 @@
 	 </style>
 	 <animate attributeName="fill" values="#29e; #4e4; #f40; #29e" dur="6s" repeatCount="indefinite" />
 <g>
-	<rect x="10.254" y="19.085" fill="#FFFFFF" width="190" height="120"/>
+	<rect x="10.254" y="19.085" fill="#333333" width="190" height="120"/>
 	<g>
 		<polyline fill="none" stroke="#006837" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="
 			200.254,135.085 200.254,139.085 196.254,139.085 		"/>
@@ -65,7 +65,7 @@
 	</g>
 </g>
 <g>
-	<rect x="245.254" y="18.085" fill="#FFFFFF" width="190" height="120"/>
+	<rect x="245.254" y="18.085" fill="#333333" width="190" height="120"/>
 	<g>
 		<polyline fill="none" stroke="#006837" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="
 			435.254,134.085 435.254,138.085 431.254,138.085 		"/>
@@ -145,7 +145,7 @@
 		H148.346z M152.628,89.984c0.02-0.9-0.38-2.38-2.021-2.38c-1.521,0-2.161,1.38-2.261,2.38H152.628z"/>
 </g>
 <g>
-	<rect x="479.254" y="19.085" fill="#FFFFFF" width="190" height="120"/>
+	<rect x="479.254" y="19.085" fill="#333333" width="190" height="120"/>
 	<g>
 		<polyline fill="none" stroke="#006837" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="
 			669.254,135.085 669.254,139.085 665.254,139.085 		"/>
@@ -174,7 +174,7 @@
 	</g>
 </g>
 <g>
-	<rect x="707.254" y="19.085" fill="#FFFFFF" width="190" height="120"/>
+	<rect x="707.254" y="19.085" fill="#333333" width="190" height="120"/>
 	<g>
 		<polyline fill="none" stroke="#006837" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="
 			897.254,135.085 897.254,139.085 893.254,139.085 		"/>

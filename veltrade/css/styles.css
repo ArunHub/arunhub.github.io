@@ -244,12 +244,13 @@ section h3, section h4, section h5, section p, section figcaption {
 blockquote {
   position: relative;
   padding: 1.6rem;
-  background: #D7FFF1;
-  border-left: 10px solid #8CD790;
-  color: #77AF9C;
-  font-size: 1.5rem;
+  background: #136ca7;
+  border-left: 10px solid #003050;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
   font-style: italic;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.07);
+  box-shadow: -5px 5px 5px rgba(255, 255, 255, 0.05);
 }
 
 blockquote a {
@@ -265,7 +266,7 @@ blockquote:before {
   font-size: 3rem;
   width: 30px;
   height: 40px;
-  background: #8CD790;
+  background: #003050;
   color: white;
 }
 
@@ -345,6 +346,11 @@ ul.list-block li:before {
   background: #8CD790;
 }
 
+.cent-half-center {
+  width: 50%;
+  margin: 10px auto;
+}
+
 /* custom styling */
 .container {
   width: 1170px;
@@ -393,19 +399,21 @@ header .header__secondpart {
   transform: translateY(-5px);
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-}
-
-nav .logo {
-  flex: 0 0 auto;
+.logo {
+  width: 170px;
+  float: left;
+  margin: 0;
   letter-spacing: initial;
 }
 
-nav .logo a {
+.logo a {
   display: block;
   color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
 }
 
 nav .menu {
@@ -470,6 +478,10 @@ nav .menu a + .menu__tools a:hover {
 
 #whatforex p img.angrybull {
   width: 25%;
+}
+
+#strategy_service blockquote {
+  margin: 1rem 0;
 }
 
 .hero-image {
@@ -732,4 +744,4 @@ footer {
   padding: 0.5rem;
 }
 
-/*# sourceMappingURL=maps/vel.css.map */
+/*# sourceMappingURL=maps/styles.css.map */

@@ -346,6 +346,11 @@ ul.list-block li:before {
   background: #8CD790;
 }
 
+.cent-half-center {
+  width: 50%;
+  margin: 10px auto;
+}
+
 /* custom styling */
 .container {
   width: 1170px;

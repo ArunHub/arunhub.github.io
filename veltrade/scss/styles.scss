@@ -1,3 +1,21 @@
+/*
+
+Theme Name: twentysixteen_child
+
+Theme URI: http://gainstarts.com
+
+Description: Use this theme to start your twentysixteen Child Theme development.
+
+Author: Vinod
+
+Author URI: http://gainstarts.com
+
+Template: twentysixteen
+
+Version: 2.0
+
+*/
+
 /* variables */
 
 $header_height: 200px;
@@ -485,14 +503,9 @@ nav {
 }
 
 #strategy_service {
-    // background: url(../images/galaxy-spiral.png) no-repeat fixed;
     blockquote{
         margin: 1rem 0;
     }
-}
-
-#coding_service {
-    // background: url(../images/pattern1.png);
 }
 
 .hero-image {

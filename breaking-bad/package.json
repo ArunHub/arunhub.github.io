@@ -1,0 +1,73 @@
+{
+  "name": "chemistry",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "karma start --single-run --browsers PhantomJS",
+    "start": "gulp",
+    "dev": "gulp --gulpfile gulp-tasks",
+    "build": "NODE_ENV=production gulp build --gulpfile gulp-tasks",
+    "gulp-build": "gulp build --gulpfile gulp-tasks",
+    "coverage": "istanbul cover js/jasmine2.8.0/spec/script.spec.js",
+    "e2e": "gulp e2e",
+    "tdd": "gulp tdd",
+    "inject": "gulp inject",
+    "wp-start": "webpack-dev-server --mode development --hot",
+    "wp-build": "rimraf dist && webpack --config ./config/webpack.prod.js --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArunHub/BreakingBad.git"
+  },
+  "author": "arun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArunHub/BreakingBad/issues"
+  },
+  "homepage": "https://github.com/ArunHub/BreakingBad#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.4",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "1.1.11",
+    "gulp": "^4.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-inject": "^5.0.2",
+    "gulp-jasmine": "^4.0.0",
+    "gulp-jasmine-browser": "^4.0.0",
+    "gulp-protractor": "^4.1.0",
+    "gulp-uglify": "^3.0.1",
+    "html-webpack-plugin": "3.2.0",
+    "jasmine-core": "^3.3.0",
+    "jasmine-reporters": "^2.3.2",
+    "jquery": "^3.4.0",
+    "karma": "^3.1.4",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^1.1.2",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "mini-css-extract-plugin": "^0.5.0",
+    "optimize-css-assets-webpack-plugin": "5.0.0",
+    "protractor": "^5.4.1",
+    "rimraf": "2.6.2",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "1.2.7",
+    "webpack": "4.16.5",
+    "webpack-cli": "3.1.0",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "4.1.4",
+    "webpack-merge-and-include-globally": "^2.1.16"
+  },
+  "dependencies": {
+    "modernizr": "^3.7.1"
+  }
+}

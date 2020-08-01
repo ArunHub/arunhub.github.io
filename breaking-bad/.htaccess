@@ -1,0 +1,46 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.breakingbad.imarun.com [NC]
+RewriteRule ^(.*)$ http://breakingbad.imarun.com/$1 [R=301,L,NC]
+
+ErrorDocument 404 /404.php
+
+# compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /404.php?path=$1 [L]
+
+<IfModule mod_expires.c>
+
+# Enable expirations
+ExpiresActive On
+
+# Default directive
+ExpiresDefault "access plus 1 month"
+
+# My favicon
+ExpiresByType image/x-icon "access plus 6 months"
+
+# Images
+ExpiresByType image/gif "access plus 6 months"
+ExpiresByType image/png "access plus 6 months"
+ExpiresByType image/jpg "access plus 6 months"
+ExpiresByType image/jpeg "access plus 6 months"
+
+# Javascript
+ExpiresByType application/javascript "access plus 1 month"
+
+</IfModule>
+
+
+# Disable server signature
+ServerSignature Off

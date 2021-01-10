@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./impact/static/css/main.3b926c6f.chunk.css",
-    "main.js": "./impact/static/js/main.720e16ba.chunk.js",
-    "main.js.map": "./impact/static/js/main.720e16ba.chunk.js.map",
+    "main.js": "./impact/static/js/main.a6070c0d.chunk.js",
+    "main.js.map": "./impact/static/js/main.a6070c0d.chunk.js.map",
     "runtime-main.js": "./impact/static/js/runtime-main.ff9d8170.js",
     "runtime-main.js.map": "./impact/static/js/runtime-main.ff9d8170.js.map",
     "static/js/2.ba8ac1cb.chunk.js": "./impact/static/js/2.ba8ac1cb.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ff9d8170.js",
     "static/js/2.ba8ac1cb.chunk.js",
     "static/css/main.3b926c6f.chunk.css",
-    "static/js/main.720e16ba.chunk.js"
+    "static/js/main.a6070c0d.chunk.js"
   ]
 }
